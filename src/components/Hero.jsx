@@ -75,7 +75,7 @@ function Hero() {
           <img
             src={coursee}
             alt="main-image"
-            className="w-full h-full xl:max-w-[742px]"
+            className="w-full h-full xl:max-w-[742px] object-cover"
           />
         </div>
       </div>

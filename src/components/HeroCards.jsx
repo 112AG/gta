@@ -41,7 +41,7 @@ const HeroCards = () => {
     <div className="relative w-full overflow-hidden ">
       <button
         onClick={prev}
-        className="absolute z-20 left-[6%] xl:left-[26%] top-1/2 transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-20 right-[6%] xl:left-[26%] top-1/2 transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const HeroCards = () => {
 
       <button
         onClick={next}
-        className="absolute z-20 right-[6%] xl:right-[26%] top-1/2 transform -translate-y-1/2  flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-20  right-[6%] xl:right-[26%] top-1/2 transform -translate-y-1/2  flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
