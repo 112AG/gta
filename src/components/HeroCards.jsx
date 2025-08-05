@@ -3,6 +3,9 @@ import classOne from "../assets/heroImages/globalTradingAcademy-classes.png";
 import classTwo from "../assets/heroImages/globalTradingAcademy-classes2.png";
 import classThree from "../assets/heroImages/globalTradingAcademy-classes3.png";
 import coursee from "../assets/heroImages/globalTradingAcademy-courses.png";
+import leftblur from "../assets/heroImages/globalTradingAcademy-foregroundblurleft.svg";
+import rightblur from "../assets/heroImages/globalTradingAcademy-foregroundblurright.svg";
+import usFlag from "../assets/heroImages/globalTradingAgency-usFlag.png"
 
 const HeroCards = () => {
   const allClasses = [classThree, classTwo, classOne, coursee];
@@ -11,7 +14,13 @@ const HeroCards = () => {
 
   const updateCardsToShow = useCallback(() => {
     const width = window.innerWidth;
-    setCardsToShow(width < 768 ? 1 : width < 1224 ? 2 : 3);
+    if (width > 1584) {
+      setCardsToShow(3);
+    } else if (width > 700) {
+      setCardsToShow(2);
+    } else {
+      setCardsToShow(1);
+    }
   }, []);
 
   useEffect(() => {
@@ -38,10 +47,10 @@ const HeroCards = () => {
   }, [next]);
 
   return (
-    <div className="relative w-full overflow-hidden ">
+    <div className="relative w-full overflow-hidden">
       <button
         onClick={prev}
-        className="absolute z-20 right-[6%] xl:left-[26%] top-1/2 transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 left-[6%] xl:left-[26%] top-1/2 transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +66,12 @@ const HeroCards = () => {
         </svg>
       </button>
 
-      <div className="overflow-hidden h-[511.66px]">
+
+      <img src={leftblur} alt="" className="absolute -left-80 xl:-left-32 -top-12 z-30 h-[596px] opacity-95" />  
+      <img src={rightblur} alt="" className="absolute -right-80 xl:-right-32 -top-12 z-30 h-[596px] opacity-95" />
+
+
+      <div className="overflow-hidden h-[611.66px] ">
         <div
           className="flex transition-transform duration-700 ease-in-out gap-[25px]"
           style={{
@@ -65,25 +79,66 @@ const HeroCards = () => {
             transform: `translateX(-${(index * 100) / allClasses.length}%)`,
           }}
         >
-          {allClasses.map((img, i) => (
-            <div
-              key={i}
-              className="w-[881.19px] h-[495.66px]"
-              style={{ width: `${100 / allClasses.length}%` }}
-            >
-              <img
-                src={img}
-                alt={`Slide ${i + 1}`}
-                className="w-full h-full rounded-xl shadow-md object-cover"
-              />
-            </div>
-          ))}
+          {allClasses.map((img, i) => {
+            // Determine the center index for the visible cards
+            let centerIndex = index;
+            if (cardsToShow === 1) {
+              centerIndex = index;
+            } else if (cardsToShow === 2) {
+              centerIndex = index + 1;
+            } else if (cardsToShow === 3) {
+              centerIndex = index + 1;
+            }
+            const showTestimonial = i === centerIndex;
+            return (
+              <div
+                key={i}
+                className="w-[881.19px] h-[495.66px] relative"
+                style={{ width: `${100 / allClasses.length}%` }}
+              >
+                <img
+                  src={img}
+                  alt={`Slide ${i + 1}`}
+                  className="w-full h-full rounded-xl shadow-md object-cover"
+                />
+                <div
+                  className={`w-[333px] xl:w-[883.19px] flex flex-col absolute -bottom-20 z-20 items-start mx-auto text-white transition-opacity duration-500 ${showTestimonial ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                >
+                  <div className="flex items-center justify-center text-[18.438px] font-[700] leading-[32px] tracking-[-0.8px]">
+                    <h2>lucy - 19 </h2>
+                    <img
+                      src={usFlag}
+                      alt="US Flag"
+                      className="h-[30px] w-[30px]"
+                    />
+                  </div>
+                  <p className="text-[#82e95f] flex items-start">
+                    $
+                    <span
+                      className="text-[35px] font-[800] leading-[35px]"
+                      style={{
+                        background:
+                          "linear-gradient(102deg, #82E95F 0%, #3BE900 100%)",
+                        WebkitBackgroundClip: "text",
+                        backgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        color: "transparent",
+                      }}
+                    >
+                      250k
+                    </span>
+                    +profit
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <button
         onClick={next}
-        className="absolute z-20  right-[6%] xl:right-[26%] top-1/2 transform -translate-y-1/2  flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50  right-[6%] xl:right-[26%] top-1/2 transform -translate-y-1/2  flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

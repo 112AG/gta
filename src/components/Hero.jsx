@@ -3,7 +3,6 @@ import tenK from "../assets/heroImages/globalTradingAcademy-10k.png";
 import expert from "../assets/heroImages/globalTradingAcademy-experts.png";
 import learning from "../assets/heroImages/globalTradingAcademy-learning.png";
 import coursee from "../assets/heroImages/globalTradingAcademy-courses.png";
-import usFlag from "../assets/heroImages/globalTradingAgency-usFlag.png"
 import HeroCards from "./HeroCards";
 
 function Hero() {
@@ -28,8 +27,8 @@ function Hero() {
             strategies, and practical trading systems that help you trade with
             confidence and stay on track.
           </p>
-          <div className="mt-6 uppercase w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
-            <h2 className="font-[600] text-[28px] leading-[28px] text-white">
+          <div className="mt-6 uppercase sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
+            <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
               start earning through skill
             </h2>
           </div>
@@ -100,26 +99,13 @@ function Hero() {
 
       {/* swiper */}
       <HeroCards />
-      
-      <div className="w-[333px] xl:w-[883.19px] flex flex-col  items-start mx-auto text-white">
-        <div className="flex items-center justify-center text-[18.438px] font-[700] leading-[32px] tracking-[-0.8px]"><h2>lucy - 19 </h2><img src={usFlag} alt="US Flag" className="h-[30px] w-[30px]"/></div>
-        <p className="text-[#82e95f] flex items-start">
-          $
-          <span
-            className="text-[35px] font-[800] leading-[35px]"
-            style={{
-              background: "linear-gradient(102deg, #82E95F 0%, #3BE900 100%)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              color: "transparent"
-            }}
-          >
-            250k
-          </span>
-          +profit
-        </p>
+
+            <div className="mt-6 uppercase sm:w-[509px] mx-auto h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
+        <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
+          start earning through skill
+        </h2>
       </div>
+
     </div>
   );
 }

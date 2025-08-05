@@ -29,12 +29,8 @@ function Cards() {
     }
   ];
   return (
-    <div className="flex items-center justify-center flex-col font-inter">
-      <div className="mt-6 uppercase w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
-        <h2 className="font-[600] text-[28px] leading-[28px] text-white">
-          start earning through skill
-        </h2>
-      </div>
+    <div className="flex items-center justify-center flex-col font-inter pt-12">
+
       <div className="flex-wrap md:flex-wrap-reverse  justify-center z-50 relative pt-[198px] flex gap-[17px]">
         {cards.map((data, idx) => (
                   <div
