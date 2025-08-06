@@ -12,6 +12,7 @@ import WhoIam from '../components/WhoIam'
 import FAQ from '../components/FAQ'
 import RealResult from '../components/RealResult'
 import Footer from '../components/Footer'
+import Aboutus from '../components/Aboutus'
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         <WhoIam />
         <FAQ />
         <RealResult />
+        <Aboutus/>
         <Footer />
     </div>
   )

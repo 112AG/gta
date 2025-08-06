@@ -1,0 +1,342 @@
+import React from "react";
+import one from "../assets/reviews/globaltradingAcademy1.png";
+import two from "../assets/reviews/globaltradingAcademy2.png";
+import three from "../assets/reviews/globaltradingAcademy3.png";
+import four from "../assets/reviews/globaltradingAcademy4.png";
+import five from "../assets/reviews/globaltradingAcademy5.png";
+import six from "../assets/reviews/globaltradingAcademy6.png";
+import seven from "../assets/reviews/globaltradingAcademy7.png";
+import eight from "../assets/reviews/globaltradingAcademy8.png";
+import nine from "../assets/reviews/globaltradingAcademy9.png";
+import ten from "../assets/reviews/globaltradingAcademy10.png";
+import eleven from "../assets/reviews/globaltradingAcademy11.png";
+import twelve from "../assets/reviews/globaltradingAcademy12.png";
+
+function Aboutus() {
+  const workImagesOne = [
+    {
+      image: one,
+      name: "Rohit Mehra",
+      role: "College Student",
+      text: "Before joining this course, I had zero knowledge about trading. Now, I can confidently analyze charts and make profitable decisions. It's life-changing!",
+    },
+    {
+      image: two,
+      name: "Neha Sharma",
+      role: "Working Professional",
+      text: "The strategies taught are practical and easy to apply. I started seeing consistent profits within the first month itself.",
+    },
+    {
+      image: three,
+      name: "Simran Kaur",
+      role: "Housewife",
+      text: "I've taken multiple trading courses before, but none were this detailed and beginner-friendly. Highly recommend for anyone serious about trading.",
+    },
+    {
+      image: four,
+      name: "Aditya Khanna",
+      role: "Investment Banker",
+      text: "This course gave me clarity and confidence. No longer depend on tips or guesswork. The mentor is truly experienced and patient.",
+    },
+    {
+      image: five,
+      name: "Ravi Kulkarni",
+      role: "Working Professional",
+      text: "What I liked the most was the one-on-one mentorship and real-time market guidance. I recovered my course fee within 2 weeks of trading!",
+    },
+    {
+      image: six,
+      name: "Tanya Sethi",
+      role: "Job Seeker",
+      text: "As someone with a full-time job, the flexibility and recorded sessions were a blessing. The community support is also fantastic.",
+    },
+    {
+      image: seven,
+      name: "Mohammed Asif",
+      role: "Working Professional",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+    },
+    {
+      image: eight,
+      name: "Anonymous",
+      role: "",
+      text: "Excellent value for money. I finally understand risk management, psychology, and strategy — all things that make or break a trader.",
+    },
+    {
+      image: nine,
+      name: "Ankita Verma",
+      role: "Housewife",
+      text: "This course made me confident in trading. I overcame my fear of trading and gradually started growing my capital.",
+    },
+    {
+      image: ten,
+      name: "Rahul Singh",
+      role: "Working Professional",
+      text: "From a complete beginner to making my first profitable trade — all in just a few weeks. Highly recommended!",
+    },
+    {
+      image: eleven,
+      name: "Sneha Rao",
+      role: "Housewife",
+      text: "I loved the hands-on approach. We were analyzing live charts and applying strategies from day one.",
+    },
+    {
+      image: twelve,
+      name: "Nitesh Jain",
+      role: "College Student",
+      text: "Earlier, I was just gambling in the market. Now, I trade with logic and confidence.",
+    },
+  ];
+
+  const workImagesTwo = [
+    {
+      image: one,
+      name: "Rohit Mehra",
+      role: "College Student",
+      text: "Before joining this course, I had zero knowledge about trading. Now, I can confidently analyze charts and make profitable decisions. It's life-changing!",
+    },
+    {
+      image: two,
+      name: "Neha Sharma",
+      role: "Working Professional",
+      text: "The strategies taught are practical and easy to apply. I started seeing consistent profits within the first month itself.",
+    },
+    {
+      image: three,
+      name: "Simran Kaur",
+      role: "Housewife",
+      text: "I've taken multiple trading courses before, but none were this detailed and beginner-friendly. Highly recommend for anyone serious about trading.",
+    },
+    {
+      image: four,
+      name: "Aditya Khanna",
+      role: "Investment Banker",
+      text: "This course gave me clarity and confidence. No longer depend on tips or guesswork. The mentor is truly experienced and patient.",
+    },
+    {
+      image: five,
+      name: "Ravi Kulkarni",
+      role: "Working Professional",
+      text: "What I liked the most was the one-on-one mentorship and real-time market guidance. I recovered my course fee within 2 weeks of trading!",
+    },
+    {
+      image: six,
+      name: "Tanya Sethi",
+      role: "Job Seeker",
+      text: "As someone with a full-time job, the flexibility and recorded sessions were a blessing. The community support is also fantastic.",
+    },
+    {
+      image: seven,
+      name: "Mohammed Asif",
+      role: "Working Professional",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+    },
+    {
+      image: eight,
+      name: "Anonymous",
+      role: "",
+      text: "Excellent value for money. I finally understand risk management, psychology, and strategy — all things that make or break a trader.",
+    },
+    {
+      image: nine,
+      name: "Ankita Verma",
+      role: "Housewife",
+      text: "This course made me confident in trading. I overcame my fear of trading and gradually started growing my capital.",
+    },
+    {
+      image: ten,
+      name: "Rahul Singh",
+      role: "Working Professional",
+      text: "From a complete beginner to making my first profitable trade — all in just a few weeks. Highly recommended!",
+    },
+    {
+      image: eleven,
+      name: "Sneha Rao",
+      role: "Housewife",
+      text: "I loved the hands-on approach. We were analyzing live charts and applying strategies from day one.",
+    },
+    {
+      image: twelve,
+      name: "Nitesh Jain",
+      role: "College Student",
+      text: "Earlier, I was just gambling in the market. Now, I trade with logic and confidence.",
+    },
+  ];
+
+  const workImagesThree = [
+    {
+      image: one,
+      name: "Rohit Mehra",
+      role: "College Student",
+      text: "Before joining this course, I had zero knowledge about trading. Now, I can confidently analyze charts and make profitable decisions. It's life-changing!",
+    },
+    {
+      image: two,
+      name: "Neha Sharma",
+      role: "Working Professional",
+      text: "The strategies taught are practical and easy to apply. I started seeing consistent profits within the first month itself.",
+    },
+    {
+      image: three,
+      name: "Simran Kaur",
+      role: "Housewife",
+      text: "I've taken multiple trading courses before, but none were this detailed and beginner-friendly. Highly recommend for anyone serious about trading.",
+    },
+    {
+      image: four,
+      name: "Aditya Khanna",
+      role: "Investment Banker",
+      text: "This course gave me clarity and confidence. No longer depend on tips or guesswork. The mentor is truly experienced and patient.",
+    },
+    {
+      image: five,
+      name: "Ravi Kulkarni",
+      role: "Working Professional",
+      text: "What I liked the most was the one-on-one mentorship and real-time market guidance. I recovered my course fee within 2 weeks of trading!",
+    },
+    {
+      image: six,
+      name: "Tanya Sethi",
+      role: "Job Seeker",
+      text: "As someone with a full-time job, the flexibility and recorded sessions were a blessing. The community support is also fantastic.",
+    },
+    {
+      image: seven,
+      name: "Mohammed Asif",
+      role: "Working Professional",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+    },
+    {
+      image: eight,
+      name: "Anonymous",
+      role: "",
+      text: "Excellent value for money. I finally understand risk management, psychology, and strategy — all things that make or break a trader.",
+    },
+    {
+      image: nine,
+      name: "Ankita Verma",
+      role: "Housewife",
+      text: "This course made me confident in trading. I overcame my fear of trading and gradually started growing my capital.",
+    },
+    {
+      image: ten,
+      name: "Rahul Singh",
+      role: "Working Professional",
+      text: "From a complete beginner to making my first profitable trade — all in just a few weeks. Highly recommended!",
+    },
+    {
+      image: eleven,
+      name: "Sneha Rao",
+      role: "Housewife",
+      text: "I loved the hands-on approach. We were analyzing live charts and applying strategies from day one.",
+    },
+    {
+      image: twelve,
+      name: "Nitesh Jain",
+      role: "College Student",
+      text: "Earlier, I was just gambling in the market. Now, I trade with logic and confidence.",
+    },
+  ];
+
+  // Helper to repeat images for seamless scroll
+  const repeatImages = (arr, times = 2) => Array(times).fill(arr).flat();
+
+  return (
+    <div>
+      <h2 className="uppercase text-[48px] pt-[336px] whitespace-nowrap text-center font-[900] leading-[55px] text-white mb-[88px]">
+        our &nbsp;
+        <span
+          style={{
+            background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          students &nbsp;
+        </span>
+        can't stop talking
+        <span
+          style={{
+            background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            color: "transparent",
+          }}
+        >
+          &nbsp; about us
+        </span>
+      </h2>
+
+      <div className="space-y-2 sm:space-y-6">
+        {/* Layer 1: scroll right */}
+        <div className="overflow-hidden w-full">
+          <div
+            className="flex gap-2 sm:gap-4 animate-scroll-right"
+            style={{ width: "max-content" }}
+          >
+            {[...workImagesOne, ...workImagesOne].map((img, idx) => (
+              <div
+                key={idx}
+                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+              >
+                <img
+                  src={img}
+                  alt={`work-logo-one-${idx + 1}`}
+                  className="object-contain max-h-full max-w-full"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Layer 2: scroll left */}
+        <div className="overflow-hidden w-full">
+          <div
+            className="flex gap-2 sm:gap-4 animate-scroll-left"
+            style={{ width: "max-content" }}
+          >
+            {[...workImagesTwo, ...workImagesTwo].map((img, idx) => (
+              <div
+                key={idx}
+                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+              >
+                <img
+                  src={img}
+                  alt={`work-logo-two-${idx + 1}`}
+                  className="object-contain max-h-full max-w-full"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Layer 3: scroll right (slower) */}
+        <div className="overflow-hidden w-full">
+          <div
+            className="flex gap-2 sm:gap-4 animate-scroll-right-slow"
+            style={{ width: "max-content" }}
+          >
+            {repeatImages(workImagesThree).map((img, idx) => (
+              <div
+                key={`three-${idx}`}
+                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+              >
+                <img
+                  src={img}
+                  alt={`work-logo-three-${idx + 1}`}
+                  className="object-contain max-h-full max-w-full"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Aboutus;

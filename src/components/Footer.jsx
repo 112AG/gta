@@ -35,7 +35,7 @@ function Footer() {
         Just value.
       </p>
       <div className="flex pt-12 pb-[222px] gap-[24px] items-center justify-center">
-        <div className="border border-white backdrop-blur-[12.5px] w-[251px] h-[55px] pt-[18px] pb-[17px] pr-[53px] pl-[55px] bg-[#82e95f] text-[#01030e] uppercase font-[700] leading-[20px] text-[16px]">
+        <div className="border border-white backdrop-blur-[12.5px] whitespace-nowrap w-[251px] h-[55px] pt-[18px] pb-[17px] pr-[53px] pl-[55px] bg-[#82e95f] text-[#01030e] uppercase font-[700] leading-[20px] text-[16px]">
           Book free demo
         </div>
         <div className="border border-white backdrop-blur-[12.5px] w-[251px] h-[55px] px-[23px] bg-[#82e95f] text-[#01030e] flex items-center gap-[10px]">
