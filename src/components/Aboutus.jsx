@@ -292,13 +292,13 @@ function Aboutus() {
                   <img
                     src={data.image}
                     alt="Neha Sharma"
-                    className="w-[64px] h-[64px] rounded-full object-cover"
+                    className="w-[121px] h-[121px] rounded-full object-cover"
                   />
                   <div className="text-center mt-2">
                     <p className="text-[16px] font-bold leading-[20px]">
                       {data.name}
                     </p>
-                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                    <p className="text-[10px] text-[#CFCFCF] mt-1">
                       {data.role}
                     </p>
                   </div>
@@ -328,13 +328,13 @@ function Aboutus() {
                   <img
                     src={data.image}
                     alt="Neha Sharma"
-                    className="w-[64px] h-[64px] rounded-full object-cover"
+                    className="w-[121px] h-[121px] rounded-full object-cover"
                   />
                   <div className="text-center mt-2">
                     <p className="text-[16px] font-bold leading-[20px]">
                       {data.name}
                     </p>
-                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                    <p className="text-[10px] text-[#CFCFCF] mt-1">
                       {data.role}
                     </p>
                   </div>
@@ -364,13 +364,13 @@ function Aboutus() {
                   <img
                     src={data.image}
                     alt="Neha Sharma"
-                    className="w-[64px] h-[64px] rounded-full object-cover"
+                    className="w-[121px] h-[121px] rounded-full object-cover"
                   />
                   <div className="text-center mt-2">
                     <p className="text-[16px] font-bold leading-[20px]">
                       {data.name}
                     </p>
-                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                    <p className="text-[10px] text-[#CFCFCF] mt-1">
                       {data.role}
                     </p>
                   </div>
