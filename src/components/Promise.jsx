@@ -51,7 +51,7 @@ function Promise() {
   ];
 
   return (
-    <div className=" font-inter px-4 lg:px-0 relative  overflow-x-hidden ">
+    <div className=" font-inter px-4 lg:px-0 relative overflow-x-hidden ">
       <div
         className="uppercase text-center text-[48px] font-[900] leading-[48px]"
         style={{
@@ -67,23 +67,23 @@ function Promise() {
       <img
         src={background}
         alt="Image"
-        className="absolute top-12  min-w-[1920px] left-0-z-20"
+        className=" min-w-[1920px] left-0-z-20"
       />
-      <div className="pt-[80px] w-screen mx-auto">
+      <div className="pt-[120px] absolute top-0 w-full mx-auto">
         {featureData.map((feature, index) => (
           <div
             key={index}
-            className={`flex w-[1123px] mx-auto flex-col-reverse xl:flex-row justify-between items-start mb-[80px]`}
+            className={`flex w-[1523px] mx-auto justify-between items-start mb-[80px]`}
           >
             {/* Left - Image */}
             <img
               src={feature.image}
               alt={feature.title}
-              className="w-[297px] h-[314px]"
+              className="w-[726.23px] h-[440px]"
             />
 
             {/* Right - Content */}
-            <div className="text-white flex flex-col gap-4 w-[533px]">
+            <div className="text-white flex flex-col gap-4 w-[633px]">
               {/* Title & Icon */}
               <div className="flex items-center gap-4">
                 <div className="w-[55px] h-[55px] border-[#d9d9d9] border-[2px] rounded-full flex items-center justify-center">
@@ -100,7 +100,7 @@ function Promise() {
               </div>
 
               {/* Bullet Points */}
-              <div className="flex flex-col gap-2 pl-8">
+              <div className="flex flex-col gap-[34px] pl-8">
                 {feature.points.map((point, i) => (
                   <div key={i} className="flex gap-2">
                     <img
@@ -118,7 +118,8 @@ function Promise() {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center gap-2 mt-4 text-white flex-col">
+
+      <div className="flex items-center justify-center gap-2 mt-4 text-white flex-col py-[172px]">
               <div className="mt-6 uppercase sm:w-[509px] h-[60px] border-[4px] border-white flex items-center justify-center"
               style={{
             background:

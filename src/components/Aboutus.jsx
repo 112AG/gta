@@ -277,17 +277,32 @@ function Aboutus() {
             className="flex gap-2 sm:gap-4 animate-scroll-right"
             style={{ width: "max-content" }}
           >
-            {[...workImagesOne, ...workImagesOne].map((img, idx) => (
+            {[...workImagesOne, ...workImagesOne].map((data, idx) => (
               <div
                 key={idx}
-                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
               >
-                <img
-                  src={img}
-                  alt={`work-logo-one-${idx + 1}`}
-                  className="object-contain max-h-full max-w-full"
-                  loading="lazy"
-                />
+                {/* Left - Text Section */}
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
+                  <p>{data.text}</p>
+                </div>
+
+                {/* Right - Image and Name Section */}
+                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                  <img
+                    src={data.image}
+                    alt="Neha Sharma"
+                    className="w-[64px] h-[64px] rounded-full object-cover"
+                  />
+                  <div className="text-center mt-2">
+                    <p className="text-[16px] font-bold leading-[20px]">
+                      {data.name}
+                    </p>
+                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                      {data.role}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -298,17 +313,32 @@ function Aboutus() {
             className="flex gap-2 sm:gap-4 animate-scroll-left"
             style={{ width: "max-content" }}
           >
-            {[...workImagesTwo, ...workImagesTwo].map((img, idx) => (
+            {[...workImagesTwo, ...workImagesTwo].map((data, idx) => (
               <div
                 key={idx}
-                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
               >
-                <img
-                  src={img}
-                  alt={`work-logo-two-${idx + 1}`}
-                  className="object-contain max-h-full max-w-full"
-                  loading="lazy"
-                />
+                {/* Left - Text Section */}
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
+                  <p>{data.text}</p>
+                </div>
+
+                {/* Right - Image and Name Section */}
+                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                  <img
+                    src={data.image}
+                    alt="Neha Sharma"
+                    className="w-[64px] h-[64px] rounded-full object-cover"
+                  />
+                  <div className="text-center mt-2">
+                    <p className="text-[16px] font-bold leading-[20px]">
+                      {data.name}
+                    </p>
+                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                      {data.role}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -319,17 +349,32 @@ function Aboutus() {
             className="flex gap-2 sm:gap-4 animate-scroll-right-slow"
             style={{ width: "max-content" }}
           >
-            {repeatImages(workImagesThree).map((img, idx) => (
+            {repeatImages(workImagesThree).map((data, idx) => (
               <div
-                key={`three-${idx}`}
-                className="bg-[#EEE6E2] rounded-xl flex items-center justify-center sm:w-36 sm:h-18 w-28 h-14 p-2 shadow-sm"
+                key={idx}
+                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
               >
-                <img
-                  src={img}
-                  alt={`work-logo-three-${idx + 1}`}
-                  className="object-contain max-h-full max-w-full"
-                  loading="lazy"
-                />
+                {/* Left - Text Section */}
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
+                  <p>{data.text}</p>
+                </div>
+
+                {/* Right - Image and Name Section */}
+                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                  <img
+                    src={data.image}
+                    alt="Neha Sharma"
+                    className="w-[64px] h-[64px] rounded-full object-cover"
+                  />
+                  <div className="text-center mt-2">
+                    <p className="text-[16px] font-bold leading-[20px]">
+                      {data.name}
+                    </p>
+                    <p className="text-[12px] text-[#CFCFCF] mt-1">
+                      {data.role}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

@@ -20,7 +20,7 @@ function FAQ() {
 
   return (
     <div className="w-full mx-auto px-4">
-      <h2 className="uppercase text-[48px] whitespace-nowrap text-center font-[900] leading-[48px] text-white mb-8">
+      <h2 className="uppercase text-[48px] whitespace-nowrap text-center font-[900] leading-[48px] text-white mb-12">
         frequently
         <span
           style={{
