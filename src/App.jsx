@@ -2,10 +2,11 @@ import React from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import background from "./assets/heroImages/globalTradingAcademy-background.svg";
+import 'remixicon/fonts/remixicon.css';
 
 function App() {
   return (
-    <div className="bg-[#02040e] w-full h-full">
+    <div className="bg-[#02040e] w-full h-full overflow-x-hidden "  >
       <div className="bg-[#dc2626] text-white text-center font-[700] text-[17px] xl:leading-[32px] 2xl:leading-[52px] ">
         TRANSFORM YOUR TRADING IN 30 DAYS WITH PROVEN 1:1 MENTORSHIP • TRANSFORM
         YOUR TRADING IN 30 DAYS WITH PROVEN 1:1 MENTORSHIP • TRANSFORM YOUR

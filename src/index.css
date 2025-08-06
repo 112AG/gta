@@ -117,3 +117,8 @@ body {
 .swiper-button-next-custom {
   right: 20px;
 }
+
+
+    div::-webkit-scrollbar {
+      display: none;
+    }

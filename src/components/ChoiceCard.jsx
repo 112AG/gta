@@ -94,7 +94,7 @@ function ChoiceCard() {
           </div>
           {/* green card */}
           <div
-            className="w-[578px] h-[816px] border border-white backdrop-blur-[12.5px] flex flex-col items-center justify-center text-white"
+            className="w-[578px] h-[816px] border border-white backdrop-blur-[12.5px] pt-12 flex flex-col items-center justify-center text-white"
             style={{
               background:
                 "linear-gradient(111deg, rgba(130, 233, 95, 0.14) -6.34%, rgba(131, 234, 96, 0.31) 69.64%)",

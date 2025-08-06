@@ -8,6 +8,9 @@ import Paths from '../components/Paths'
 import Program from '../components/Program'
 import YouAccess from '../components/YouAccess'
 import ChoiceCard from '../components/ChoiceCard'
+import WhoIam from '../components/WhoIam'
+import FAQ from '../components/FAQ'
+import RealResult from '../components/RealResult'
 
 function Home() {
   return (
@@ -21,6 +24,9 @@ function Home() {
         <Program />
         <YouAccess />
         <ChoiceCard />
+        <WhoIam />
+        <FAQ />
+        <RealResult />
     </div>
   )
 }
