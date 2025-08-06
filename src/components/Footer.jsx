@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Footer() {
   return (
-    <div className="font-[Inter]">
+    <div className="font-[Inter] pt-[222px]">
       <h2 className="uppercase text-[48px] whitespace-nowrap text-center font-[900] leading-[48px] text-white mb-8">
         Book a
         <span
