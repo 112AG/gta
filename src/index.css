@@ -155,13 +155,13 @@ div::-webkit-scrollbar {
 }
 
 .animate-scroll-right {
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 120s linear infinite;
 }
 
 .animate-scroll-left {
-  animation: scrollLeft 30s linear infinite;
+  animation: scrollLeft 140s linear infinite;
 }
 
 .animate-scroll-right-slow {
-  animation: scrollRightSlow 60s linear infinite;
+  animation: scrollRightSlow 130s linear infinite;
 }
