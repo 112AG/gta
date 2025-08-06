@@ -3,7 +3,7 @@ import logo from "../assets/headerImages/global-trading-academy.svg";
 import menu from "../assets/headerImages/globalTradingAcademy-menu.svg";
 function Header() {
   return (
-    <div className='font-poppins px-4 xl:px-0'>
+    <div className='font-poppins px-4 2xl:px-0'>
         
         <div className='py-[57px] max-w-[1580px] mx-auto flex justify-between'>
             {/* right */}

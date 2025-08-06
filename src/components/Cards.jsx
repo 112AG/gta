@@ -34,7 +34,7 @@ function Cards() {
       <div className="flex-wrap md:flex-wrap-reverse  justify-center z-50 relative pt-[198px] flex gap-[17px]">
         {cards.map((data, idx) => (
                   <div
-                  className="w-[418px] lg:w-[360px] 2xl:w-[418px] h-[589px] py-[16px] px-[26px] flex flex-col justify-center items-center text-white"
+                  className="w-[458px] lg:w-[360px] 2xl:w-[418px] h-[589px] py-[16px] px-[26px] flex flex-col justify-center items-center text-white"
                   key={idx}
                   style={{
                     background:

@@ -11,6 +11,7 @@ import ChoiceCard from '../components/ChoiceCard'
 import WhoIam from '../components/WhoIam'
 import FAQ from '../components/FAQ'
 import RealResult from '../components/RealResult'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
         <WhoIam />
         <FAQ />
         <RealResult />
+        <Footer />
     </div>
   )
 }

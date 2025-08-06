@@ -8,7 +8,7 @@ import rightblur from "../assets/heroImages/globalTradingAcademy-foregroundblurr
 import usFlag from "../assets/heroImages/globalTradingAgency-usFlag.png"
 
 const HeroCards = () => {
-  const allClasses = [classThree, classTwo, classOne, coursee];
+  const allClasses = [classThree, classTwo, classOne];
   const [index, setIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(3);
 

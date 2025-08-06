@@ -9,9 +9,9 @@ function Hero() {
 
   return (
     <div className="px-4 lg:px-0">
-      <div className="xl:py-[60px] w-full max-w-[1580px] mx-auto flex justify-between flex-col-reverse lg:flex-row font-inter">
+      <div className="xl:py-[60px] px-4 2xl:px-0 w-full max-w-[1580px] mx-auto flex justify-between flex-col-reverse lg:flex-row font-inter">
         {/* Left */}
-        <div className="w-full lg:w-[50%] font-inter">
+        <div className="w-full lg:w-[50%] font-inter z-40">
           <h1 className="w-full lg:w-[666px] lg:h-[201px] font-[900] text-[48px] leading-[55px] uppercase text-white">
             <span className="text-[#9DF280]">MONEY</span>{" "}
             <span>FOLLOWS SKILL</span>
@@ -85,7 +85,7 @@ function Hero() {
         </div>
       </div>
       {/* hero section bottom text */}
-      <div className="py-12 xl:py-0 xl:max-w-[1194px] xl:h-[129px] w-full mx-auto">
+      <div className="py-12 xl:py-0 px-4 2xl:px-0 xl:max-w-[1194px] xl:h-[129px] w-full mx-auto">
         <p className="text-white text-center font-inter text-[20px] font-[700] leading-[27px] whitespace-wrap">
           Join traders worldwide who trust Sachin Rao’s personal guidance to get
           funded, withdraw consistently, and build serious trading income with

@@ -21,7 +21,7 @@ function BuildTrade() {
       <h4 className="uppercase text-center text-[32px] font-[900] leading-[48px] text-white py-2">
         we build real traders
       </h4>
-      <p className="2xl:w-[1237px] 2xl:h-[181px] text-[20px] text-center font-[700] leading-[27px] text-white">
+      <p className="2xl:w-[1237px] mx-auto 2xl:h-[181px] text-[20px] text-center font-[700] leading-[27px] text-white">
         At Global Trading Academy, we do things differently. Led by Sachin Rao
         an experienced trader with years in live markets we offer more than just
         lessons. You get personal mentorship, clear rules, and a community built
@@ -126,7 +126,7 @@ function BuildTrade() {
           </div>
         </div>
         {/* right */}
-        <img src={teachTrade} alt="Image" />
+        <img src={teachTrade} alt="Image" className="w-full h-full object-cover" />
       </div>
     </div>
   );
