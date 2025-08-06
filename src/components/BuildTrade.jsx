@@ -113,7 +113,13 @@ function BuildTrade() {
           <p className="xl:w-[667px] text-white text-[20px] font-[500] leading-[27px]">
             But only if you follow proven trading systems with the right strategies and mentorship.<br /><br />In the Global Trading Academy, you will gain direct access to expert traders and coaches who will guide you through a structured, step-by-step path designed to turn beginners into confident, skilled traders.<br /><br />Whether it’s day trading, swing trading, or long-term investing, our community is built to help you succeed faster than you ever thought possible.
           </p>
-                    <div className="mt-6 uppercase sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
+                    <div className="mt-6 uppercase sm:w-[509px] h-[60px] border-[4px] border-white flex items-center justify-center"
+                    style={{
+            background:
+              "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
+            boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
+            backdropFilter: "blur(12.5px)",
+          }}>
             <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
               start your 30 days journey
             </h2>

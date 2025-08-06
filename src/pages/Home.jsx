@@ -6,6 +6,8 @@ import BuildTrade from '../components/BuildTrade'
 import Promise from '../components/Promise'
 import Paths from '../components/Paths'
 import Program from '../components/Program'
+import YouAccess from '../components/YouAccess'
+import ChoiceCard from '../components/ChoiceCard'
 
 function Home() {
   return (
@@ -17,6 +19,8 @@ function Home() {
         <Promise />
         <Paths />
         <Program />
+        <YouAccess />
+        <ChoiceCard />
     </div>
   )
 }

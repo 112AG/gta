@@ -69,7 +69,7 @@ function Paths() {
           <p>
             Build a rewarding career! Join Global Trading Academy, master forex techniques to overcome prop challenges, and unlock financial growth, start today.
           </p>
-                    <div className="mt-6 uppercase sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
+                    <div className="mt-6 uppercase cursor-pointer sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
             <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
               join global trading academy
             </h2>
