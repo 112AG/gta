@@ -3,7 +3,7 @@ import owner from "../assets/SachinRaw.svg";
 
 function WhoIam() {
   return (
-    <div className="font-inter px-4 lg:px-0 relative w-full h-[1250px]">
+    <div className="font-inter px-4 lg:px-0 relative  h-[1250px] w-[1580px] mx-auto">
       <p className="text-white uppercase text-[20px] text-center font-[700] leading-[48px]">
         meet your metor
       </p>
