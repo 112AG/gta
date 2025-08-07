@@ -36,7 +36,7 @@ function Achievement() {
         and real milestones from our growing trading community.
       </p>
 
-      <div className="flex flex-wrap items-center justify-center gap-[16px] sm:gap-[24px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] sm:gap-[24px] justify-items-center">
         {certificates.map((data, id) => (
           <div
             key={id}
@@ -49,7 +49,7 @@ function Achievement() {
               WebkitBackdropFilter: "blur(12.5px)",
             }}
           >
-            <img src={data} alt="" className="w-full h-auto object-contain" />
+            <img src={data} alt="" className="w-[80%] h-auto object-contain" />
           </div>
         ))}
       </div>

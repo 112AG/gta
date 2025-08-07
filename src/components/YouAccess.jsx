@@ -157,7 +157,8 @@ function YouAccess() {
         {tradingSections.map((section, index) => (
           <div
             key={index}
-            className="w-[1388px] text-white h-[341px] p-[32px] flex flex-col sm:flex-row justify-between items-center"
+            
+            className="z sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] 2xl:w-[1388px] text-white h-[341px] p-[32px] flex flex-col sm:flex-row justify-between items-center"
             style={{
               background:
                 "linear-gradient(92deg, rgba(130, 233, 95, 0.14) 5.1%, rgba(131, 234, 96, 0.31) 83.56%)",

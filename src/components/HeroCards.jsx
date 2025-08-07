@@ -74,7 +74,7 @@ const HeroCards = () => {
     <div className="relative w-full overflow- z-30">
       <button
         onClick={next}
-        className="absolute z-50 right-[6%] xl:right-[26%] top-[30%] sm:top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px]  h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 right-[6%] 2xl:right-[26%] top-[30%] sm:top-[20%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px]  h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         {/* Prev Arrow */}
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
@@ -85,10 +85,24 @@ const HeroCards = () => {
         </svg>
       </button>
 
-      <img src={leftblur} alt="" className="absolute -left-80 xl:-left-32 -top-12 z-30 h-[596px] opacity-95" />
-      <img src={rightblur} alt="" className="absolute -right-80 xl:-right-32 -top-12 z-30 h-[596px] opacity-95" />
+      
+      <button
+        onClick={prev}
+        className="absolute z-50 left-[6%] 2xl:left-[26%] top-[30%] sm:top-[20%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+      >
+        {/* Next Arrow */}
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
+          <path
+            d="M0.661133 16.4108C-0.217773 17.2897 -0.217773 18.7171 0.661133 19.596L9.66113 28.596C10.54 29.4749 11.9674 29.4749 12.8463 28.596C13.7252 27.7171 13.7252 26.2897 12.8463 25.4108L7.68535 20.2499H33.7502C34.9947 20.2499 36.0002 19.2444 36.0002 17.9999C36.0002 16.7554 34.9947 15.7499 33.7502 15.7499H7.68535L12.8463 10.589C13.7252 9.71006 13.7252 8.28271 12.8463 7.40381C11.9674 6.5249 10.54 6.5249 9.66113 7.40381L0.661133 16.4038V16.4108Z"
+            fill="white"
+          />
+        </svg>
+      </button>
 
-      <div className="overflow-hidden h-[440px] sm:h-[611.66px]">
+      <img src={leftblur} alt="" className="absolute -left-80 xl:-left-32 -top-18 z-30 2xl:h-[596px] opacity-70 2xl:opacity-95" />
+      <img src={rightblur} alt="" className="absolute -right-80 xl:-right-32 -top-18 z-30 2xl:h-[596px] opacity-70 2xl:opacity-95" />
+
+      <div className="overflow-hidden h-[440px] lg:h-[501.66px]">
         <div
           ref={sliderRef}
           className={`flex gap-[25px] ${transition ? "transition-transform duration-700 ease-in-out" : ""}`}
@@ -142,18 +156,6 @@ const HeroCards = () => {
         </div>
       </div>
 
-      <button
-        onClick={prev}
-        className="absolute z-50 left-[6%] xl:left-[26%] top-[30%] sm:top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
-      >
-        {/* Next Arrow */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
-          <path
-            d="M0.661133 16.4108C-0.217773 17.2897 -0.217773 18.7171 0.661133 19.596L9.66113 28.596C10.54 29.4749 11.9674 29.4749 12.8463 28.596C13.7252 27.7171 13.7252 26.2897 12.8463 25.4108L7.68535 20.2499H33.7502C34.9947 20.2499 36.0002 19.2444 36.0002 17.9999C36.0002 16.7554 34.9947 15.7499 33.7502 15.7499H7.68535L12.8463 10.589C13.7252 9.71006 13.7252 8.28271 12.8463 7.40381C11.9674 6.5249 10.54 6.5249 9.66113 7.40381L0.661133 16.4038V16.4108Z"
-            fill="white"
-          />
-        </svg>
-      </button>
     </div>
   );
 };
