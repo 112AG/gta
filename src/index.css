@@ -165,3 +165,21 @@ div::-webkit-scrollbar {
 .animate-scroll-right-slow {
   animation: scrollRightSlow 130s linear infinite;
 }
+
+
+.bg-img {
+  background-image: url('./assets/paths/globalTradingAcademy-programbackground.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  height: 1200px;
+
+}
+
+.bg-card {
+    background-image: url('./assets/choicecardsbackground.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1600px;
+}

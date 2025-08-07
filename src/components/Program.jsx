@@ -6,12 +6,11 @@ import gradeint2 from "../assets/paths/gradient2.svg";
 
 function Program() {
   return (
-    <div className="h-full overflow-hidden w-full">
+    <div className="h-full overflow-hidden w-full relative mb-[87px] bg-img mt-[0px] xl:mt-[236px]">
       {" "}
-      <div className="h-[1920px] relative lg:top-56">
-              <img src={pathImagetwo} alt="image" className="w-full h-full opacity-60" />
-      </div>
-      <img
+
+
+        <img
         src={gradeint1}
         alt="image"
         className="absolute bottom-0 w-[50%] sm:w-auto"
@@ -21,7 +20,8 @@ function Program() {
         alt="image"
         className="absolute bottom-0 right-0 w-[50%] sm:w-auto"
       />
-      <div className="absolute top-[20%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
+
+      <div className="relative top-[20%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
         <div className="flex justify-center">
           <img
             src={masterprogram}

@@ -234,7 +234,7 @@ function YouAccess() {
         }}
       >
         <p className="text-[13px] font-[700] leading-[48px] uppercase text-[#ff2c2c]">
-          real rice $5000 usd
+          real price $5000 usd
         </p>
         <h3
           className="text-[64px] font-[900] leading-[48px] uppercase"

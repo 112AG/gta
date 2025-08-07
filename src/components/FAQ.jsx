@@ -20,7 +20,7 @@ function FAQ() {
 
   return (
     <div className="w-full mx-auto px-4">
-      <h2 className="uppercase text-[48px] whitespace-nowrap text-center font-[900] leading-[48px] text-white mb-12">
+      <h2 className="uppercase text-[28px] sm:text-[36px] md:text-[44px] xl:text-[48px] text-center font-[900] leading-[36px] sm:leading-[42px] xl:leading-[48px] text-white mb-12">
         frequently
         <span
           style={{
@@ -35,34 +35,35 @@ function FAQ() {
         </span>
       </h2>
 
-<div className="flex flex-col items-center justify-center gap-3">
-  {faqData.map((item, index) => (
-    <div
-      key={index}
-      onClick={() => toggleFAQ(index)}
-      className={`w-[1009px] rounded-[6px] border-b border-white/10 cursor-pointer transition-all duration-300
-      ${openIndex === index ? "bg-[#2C313A]" : "bg-[#131B23]"}`}
-    >
-      <div className="flex items-center justify-between gap-[474.37px] px-[24px] pt-[23px] pb-[25px]">
-        <h3 className="text-white font-medium text-base">{item.question}</h3>
-        <span className="text-white text-lg">
-          {openIndex !== index ? (
-            <i className="ri-arrow-down-s-line text-white text-xl"></i>
-          ) : (
-            <i className="ri-arrow-right-s-line text-white text-xl"></i>
-          )}
-        </span>
+      <div className="flex flex-col items-center justify-center gap-3">
+        {faqData.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => toggleFAQ(index)}
+            className={`w-full max-w-[1009px] rounded-[6px] border-b border-white/10 cursor-pointer transition-all duration-300
+            ${openIndex === index ? "bg-[#2C313A]" : "bg-[#131B23]"}`}
+          >
+            <div className="flex items-center justify-between px-4 sm:px-6 pt-5 pb-5">
+              <h3 className="text-white font-medium text-sm sm:text-base pr-4">
+                {item.question}
+              </h3>
+              <span className="text-white text-lg">
+                {openIndex !== index ? (
+                  <i className="ri-arrow-down-s-line text-xl"></i>
+                ) : (
+                  <i className="ri-arrow-right-s-line text-xl"></i>
+                )}
+              </span>
+            </div>
+
+            {openIndex === index && item.answer && (
+              <div className="px-4 sm:px-6 pb-5">
+                <p className="text-sm text-gray-300 mt-2">{item.answer}</p>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-
-      {openIndex === index && item.answer && (
-        <div className="px-[24px] pb-[25px]">
-          <p className="text-sm text-gray-300 mt-2">{item.answer}</p>
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
     </div>
   );
 }

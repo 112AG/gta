@@ -27,7 +27,7 @@ function Hero() {
             confidence and stay on track.
           </p>
           <a
-            href="https://sachin4803.graphy.com/"
+            href="https://sachin4803.graphy.com/s/store"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 uppercase w-full sm:w-[509px] h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"

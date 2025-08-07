@@ -243,7 +243,7 @@ function Aboutus() {
 
   return (
     <div>
-      <h2 className="uppercase text-[48px] pt-[336px] whitespace-nowrap text-center font-[900] leading-[55px] text-white mb-[88px]">
+      <h2 className="uppercase text-[28px] sm:text-[36px] md:text-[44px] xl:text-[48px] pt-[120px] sm:pt-[200px] xl:pt-[399px] pb-[40px] xl:pb-[81px] text-center font-[900] leading-tight text-white mb-8">
         our &nbsp;
         <span
           style={{
@@ -256,7 +256,7 @@ function Aboutus() {
         >
           students &nbsp;
         </span>
-        can't stop talking
+        can't stop <br className="block xl:hidden"/> talking
         <span
           style={{
             background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
