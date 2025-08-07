@@ -6,7 +6,6 @@ import coursee from "../assets/heroImages/globalTradingAcademy-courses.png";
 import HeroCards from "./HeroCards";
 
 function Hero() {
-
   return (
     <div className="px-4 2xl:px-0">
       <div className="py-8 xl:py-[60px] w-full max-w-[1580px] mx-auto flex justify-between items-start flex-col-reverse lg:flex-row font-inter">
@@ -15,10 +14,10 @@ function Hero() {
           <h1 className="w-full xl:w-[666px] xl:h-[201px] font-[900] text-[28px] sm:text-[32px] md:text-[32px] xl:text-[48px] leading-[32px] sm:leading-[42px] md:leading-[38px] xl:leading-[55px] uppercase text-white mb-4 lg:mb-0">
             <span className="text-[#9DF280]">MONEY</span>{" "}
             <span>FOLLOWS SKILL</span>
-            <br className="hidden sm:block lg:block"/>
+            <br className="hidden sm:block lg:block" />
             <span className="font-[500]">
               AND WE BUILD THAT <span className="text-[#9DF280]">SKILL</span>{" "}
-              <br className="hidden sm:block lg:block"/>
+              <br className="hidden sm:block lg:block" />
               FROM <span className="text-[#9DF280]">DAY</span> ONE.
             </span>
           </h1>
@@ -27,21 +26,31 @@ function Hero() {
             strategies, and practical trading systems that help you trade with
             confidence and stay on track.
           </p>
-          <div className="mt-6 uppercase w-full sm:w-[509px] h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
-          style={{
-            background:
-              "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
-            boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
-            backdropFilter: "blur(12.5px)",
-          }}>
+          <a
+            href="https://sachin4803.graphy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 uppercase w-full sm:w-[509px] h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
+            style={{
+              background:
+                "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
+              boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
+              backdropFilter: "blur(12.5px)",
+            }}
+          >
             <h2 className="font-[600] text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-white text-center">
               start earning through skill
             </h2>
-          </div>
+          </a>
+
           {/* Three Cards Hero left sec */}
           <div className="flex flex-col sm:flex-row items-center justify-start gap-[8px] sm:gap-[11px] py-[20px] sm:py-[34px]">
             <div className="w-full sm:w-[204px] h-[64px] border-[1px] border-[#D9D9D9] flex items-center justify-center gap-[8px]">
-              <img src={learning} alt="Cards" className="w-[35px] sm:w-[45px]" />
+              <img
+                src={learning}
+                alt="Cards"
+                className="w-[35px] sm:w-[45px]"
+              />
               <div>
                 <p className="uppercase font-[700] text-[10px] sm:text-[11px] leading-[10px] sm:leading-[11px] text-[#9df280]">
                   world class
@@ -63,7 +72,11 @@ function Hero() {
               </div>
             </div>
             <div className="w-full sm:w-[204px] h-[64px] border-[1px] border-[#D9D9D9] flex items-center justify-center gap-[8px]">
-              <img src={expert} alt="Cards" className="w-[22px] sm:w-[28.18px]" />
+              <img
+                src={expert}
+                alt="Cards"
+                className="w-[22px] sm:w-[28.18px]"
+              />
               <div>
                 <p className="uppercase font-[700] text-[9px] sm:text-[11px] leading-[9px] sm:leading-[11px] text-[#9df280]">
                   1-1 mentorship from
@@ -83,7 +96,6 @@ function Hero() {
             className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[742px] h-auto object-cover"
           />
         </div>
-
       </div>
       {/* hero section bottom text */}
       <div className="py-8 xl:py-0 px-4 2xl:px-0 xl:max-w-[1194px] xl:h-[129px] w-full mx-auto">
@@ -107,19 +119,19 @@ function Hero() {
       {/* swiper */}
       <HeroCards />
 
-      <div className="mt-6 uppercase w-full sm:w-[598px] mx-auto h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
-                style={{
-        background:
-          "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
-        boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
-        backdropFilter: "blur(12.5px)",
-      }}>
-        
+      <div
+        className="mt-6 uppercase w-full sm:w-[598px] mx-auto h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
+        style={{
+          background:
+            "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
+          boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
+          backdropFilter: "blur(12.5px)",
+        }}
+      >
         <h2 className="font-[600] text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-white text-center">
           start mentorship with sachin rao
         </h2>
       </div>
-
     </div>
   );
 }

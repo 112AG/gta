@@ -100,9 +100,9 @@ const HeroCards = () => {
       </button>
 
       <img src={leftblur} alt="" className="absolute -left-80 xl:-left-32 -top-18 z-30 2xl:h-[596px] opacity-70 2xl:opacity-95" />
-      <img src={rightblur} alt="" className="absolute -right-80 xl:-right-32 -top-18 z-30 2xl:h-[596px] opacity-70 2xl:opacity-95" />
+      <img src={rightblur} alt="" className="absolute -right-80 xl:-right- -top-18 z-30 2xl:h-[596px] opacity-70 2xl:opacity-95" />
 
-      <div className="overflow-hidden h-[440px] lg:h-[501.66px]">
+      <div className="overflow-hidden h-[440px] lg:h-[481.66px]">
         <div
           ref={sliderRef}
           className={`flex gap-[25px] ${transition ? "transition-transform duration-700 ease-in-out" : ""}`}

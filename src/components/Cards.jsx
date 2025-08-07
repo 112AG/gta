@@ -31,7 +31,7 @@ function Cards() {
   return (
     <div className="flex items-center justify-center flex-col font-inter sm:pt-12">
 
-      <div className="flex-wrap md:flex-wrap justify-center z-50 relative pt-[120px] sm:pt-[198px] flex gap-[17px]">
+      <div className="flex-wrap md:flex-wrap justify-center z-50 relative pt-[80px] sm:pt-[128px] flex gap-[17px]">
         {cards.map((data, idx) => (
                   <div
                   className="w-[318px] lg:w-[360px] 2xl:w-[418px] h-[526px] sm:h-[589px] py-[16px] px-[26px] flex flex-col justify-center items-center text-white"

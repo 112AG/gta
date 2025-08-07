@@ -4,24 +4,32 @@ import masterprogram from "../assets/paths/globalTradingAcademy-masteryprogram.s
 import gradeint1 from "../assets/paths/gradient1.svg";
 import gradeint2 from "../assets/paths/gradient2.svg";
 
-
 function Program() {
   return (
-    <div className="relative -top-8 sm:-top-12 lg:-top-20">
+    <div className="h-full overflow-hidden w-full">
       {" "}
-      <img src={pathImagetwo} alt="image" className="w-screen opacity-60" />
-      <img src={gradeint1} alt="image" className="absolute bottom-0 w-[50%] sm:w-auto" />
-      <img src={gradeint2} alt="image" className="absolute bottom-0 right-0 w-[50%] sm:w-auto" />
-
+      <div className="h-[1920px] relative lg:top-56">
+              <img src={pathImagetwo} alt="image" className="w-full h-full opacity-60" />
+      </div>
+      <img
+        src={gradeint1}
+        alt="image"
+        className="absolute bottom-0 w-[50%] sm:w-auto"
+      />
+      <img
+        src={gradeint2}
+        alt="image"
+        className="absolute bottom-0 right-0 w-[50%] sm:w-auto"
+      />
       <div className="absolute top-[20%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
         <div className="flex justify-center">
-          <img 
-            src={masterprogram} 
-            alt="Image" 
+          <img
+            src={masterprogram}
+            alt="Image"
             className="w-[200px] sm:w-[300px] lg:w-[400px] xl:w-auto h-auto object-contain"
           />
         </div>
-        
+
         <div className="pt-4 sm:pt-8 xl:pt-22 flex flex-col items-center xl:items-start text-center xl:text-left">
           <div
             className="uppercase text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[48px] font-[900] leading-[32px] sm:leading-[40px] lg:leading-[44px] xl:leading-[48px]"
@@ -38,7 +46,7 @@ function Program() {
           <p className="uppercase text-[20px] sm:text-[24px] lg:text-[28px] xl:text-[32px] font-[800] leading-[28px] sm:leading-[32px] lg:leading-[40px] xl:leading-[54px] text-white">
             prop firm mastery
           </p>
-          <svg 
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="300"
             height="4"
@@ -56,7 +64,10 @@ function Program() {
             Accelerate your journey to prop firm success with 30 days of live
             training, real strategy, and personal mentorship.
           </p>
-          <div
+          <a
+            href="https://sachin4803.graphy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-4 sm:mt-6 uppercase w-full max-w-[300px] sm:max-w-[400px] xl:w-[474px] h-[56px] sm:h-[64px] xl:h-[72px] flex items-center justify-center border-[4px] border-white py-[12px] sm:py-[16px] px-[16px] sm:px-[20px] xl:px-[26px]"
             style={{
               background:
@@ -68,7 +79,7 @@ function Program() {
             <h2 className="font-[600] text-[18px] sm:text-[18px] lg:text-[22px] xl:text-[22px] whitespace-nowrap leading-[22px] sm:leading-[26px] xl:leading-[28px] text-white text-center">
               join the mastery program
             </h2>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import pathImage from "../assets/paths/globalTradingAcademy-paths.svg";
 import connector from "../assets/paths/globalTradingAcademy-connector.svg";
 function Paths() {
   return (
-    <div>
+    <div className="h-full w-full px-4 lg:px-0 flex items-center justify-center flex-col">
       <div
         className="uppercase text-center text-[20px] font-[700] leading-[48px]"
         style={{
@@ -76,8 +76,11 @@ function Paths() {
             techniques to overcome prop challenges, and unlock financial growth,
             start today.
           </p>
-          <div
-            className="mt-6 uppercase cursor-pointer sm:w-[509px] h-[60px] border-[4px] border-white flex items-center justify-center"
+          <a
+            href="https://sachin4803.graphy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 uppercase cursor-pointer z-50 sm:w-[509px] h-[60px] border-[4px] border-white flex items-center justify-center"
             style={{
               background:
                 "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
@@ -88,7 +91,7 @@ function Paths() {
             <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
               join global trading academy
             </h2>
-          </div>
+          </a>
         </div>
       </div>
     </div>

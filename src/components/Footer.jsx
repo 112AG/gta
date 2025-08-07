@@ -35,10 +35,20 @@ function Footer() {
         Just value.
       </p>
       <div className="flex pt-12 pb-[222px] gap-[24px] items-center justify-center">
-        <div className="border border-white backdrop-blur-[12.5px] whitespace-nowrap w-[251px] h-[55px] pt-[18px] pb-[17px] pr-[53px] pl-[55px] bg-[#82e95f] text-[#01030e] uppercase font-[700] leading-[20px] text-[16px]">
+        <a
+          href="https://sachin4803.graphy.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-white backdrop-blur-[12.5px] whitespace-nowrap w-[251px] h-[55px] pt-[14px] pb-[17px] pr-[53px] pl-[55px] bg-[#82e95f] text-[#01030e] uppercase font-[700] leading-[20px] text-[16px]"
+        >
           Book free demo
-        </div>
-        <div className="border border-white backdrop-blur-[12.5px] w-[251px] h-[55px] px-[23px] bg-[#82e95f] text-[#01030e] flex items-center gap-[10px]">
+        </a>
+        <a
+ href="https://wa.me/918283863866"
+            target="_blank"
+            rel="noopener noreferrer"
+          className="border border-white backdrop-blur-[12.5px] w-[251px] h-[55px] px-[23px] bg-[#82e95f] text-[#01030e] flex items-center gap-[10px]"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -54,7 +64,7 @@ function Footer() {
           <p className="font-[700] leading-[20px] text-[16px] whitespace-nowrap">
             Connect on Whatsapp
           </p>
-        </div>
+        </a>
       </div>
 
       <div className="border-t-4 border-white/10 w-[1236px] flex items-start flex-col gap-[68px] h-full">
@@ -88,15 +98,14 @@ function Footer() {
             >
               support@globaltradingacademy.com
             </a>
-<a
-  href="https://sachin4803.graphy.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="uppercase border border-white bg-[#82E95F] backdrop-blur-[12.5px] w-[230px] h-[55px] pt-[18px] pb-[17px] px-0 text-[#01030e] text-center text-[16px] font-[700] leading-[20px] mt-[40px] cursor-pointer flex items-center justify-center"
->
-  login
-</a>
-
+            <a
+              href="https://sachin4803.graphy.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="uppercase border border-white bg-[#82E95F] backdrop-blur-[12.5px] w-[230px] h-[55px] pt-[18px] pb-[17px] px-0 text-[#01030e] text-center text-[16px] font-[700] leading-[20px] mt-[40px] cursor-pointer flex items-center justify-center"
+            >
+              login
+            </a>
           </div>
         </div>
 

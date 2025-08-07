@@ -135,7 +135,7 @@ function YouAccess() {
   ];
 
   return (
-    <div className="font-inter px-4 lg:px-0">
+    <div className=" h-full font-inter px-12 lg:px-0">
       <div
         className="uppercase text-[20px] font-[700] leading-[48px] text-center"
         style={{
@@ -157,8 +157,7 @@ function YouAccess() {
         {tradingSections.map((section, index) => (
           <div
             key={index}
-            
-            className="z sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] 2xl:w-[1388px] text-white h-[341px] p-[32px] flex flex-col sm:flex-row justify-between items-center"
+            className="w-full max-w-[1388px] text-white h-[341px] p-[32px] flex flex-col sm:flex-row justify-between items-center"
             style={{
               background:
                 "linear-gradient(92deg, rgba(130, 233, 95, 0.14) 5.1%, rgba(131, 234, 96, 0.31) 83.56%)",
@@ -224,8 +223,6 @@ function YouAccess() {
           </div>
         ))}
       </div>
-
-      
       <div
         className="w-[750px] mx-auto h-[341px] py-[16px] px-[26px] flex flex-col justify-center items-center"
         style={{
@@ -251,13 +248,22 @@ function YouAccess() {
         >
           $2500
         </h3>
-        <div className="mt-6 uppercase cursor-pointer sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center">
+        <a
+          href="https://sachin4803.graphy.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 uppercase cursor-pointer sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center"
+        >
           <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
             join global trading academy
           </h2>
-        </div>
+        </a>
 
-        <div className="w-[196px] h-[62px] border-[1px] border-white bg-[#82e95f] flex items-center justify-center gap-[5px] mt-[29px]">
+        <a 
+          href="https://wa.me/918283863866"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[196px] h-[62px] border-[1px] border-white bg-[#82e95f] flex items-center justify-center gap-[5px] mt-[29px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="29"
@@ -273,7 +279,7 @@ function YouAccess() {
           <p className="text-[24px] leading-[48px] font-[700] text[#02040e]">
             Support
           </p>
-        </div>
+        </a>
 
         <p className="text-white text-[10px] font-[400] leading-[48px]">
           7 days money back guarantee | Direct refunds with no questions{" "}

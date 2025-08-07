@@ -5,7 +5,7 @@ import learning from "../assets/teachTrading/globalTradingAcademy-Vector.png";
 import teachTrade from "../assets/teachTrading/globalTradingAcademy-teachtrading.svg";
 function BuildTrade() {
   return (
-    <div className="pt-[80px] sm:pt-[186px] pb-[100px] sm:pb-[216px] font-inter px-4 2xl:px-0">
+    <div className="pt-[80px] sm:pt-[186px] pb-[100px] sm:pb-[216px] font-inter px-4 2xl:px-0 z-50">
       <div
         className="uppercase text-center text-[28px] sm:text-[48px] font-[900] leading-[32px] sm:leading-[48px]"
         style={{
@@ -44,7 +44,11 @@ function BuildTrade() {
             backdropFilter: "blur(12.5px)",
           }}
         >
-          <img src={guidance} alt="image" className="w-auto h-[30px] sm:h-auto" />
+          <img
+            src={guidance}
+            alt="image"
+            className="w-auto h-[30px] sm:h-auto"
+          />
           <p className="w-[200px] sm:w-[256px] text-white text-center text-[20px] sm:text-[28px] font-[700] leading-[22px] sm:leading-[27px]">
             Real guidance
           </p>
@@ -59,7 +63,11 @@ function BuildTrade() {
             backdropFilter: "blur(12.5px)",
           }}
         >
-          <img src={learning} alt="image" className="w-auto h-[30px] sm:h-auto" />
+          <img
+            src={learning}
+            alt="image"
+            className="w-auto h-[30px] sm:h-auto"
+          />
           <p className="w-[200px] sm:w-[256px] text-white text-center text-[20px] sm:text-[28px] font-[700] leading-[22px] sm:leading-[27px]">
             Practical systems
           </p>
@@ -84,7 +92,7 @@ function BuildTrade() {
         {/* left */}
         <div>
           <div
-            className="w-full sm:w-[340px] h-auto sm:h-[33px] text-[16px] sm:text-[20px] font-[700] leading-[24px] sm:leading-[48px] uppercase"
+            className="w-full  sm:w-[340px] h-auto sm:h-[33px] text-[16px] sm:text-[20px] font-[700] leading-[24px] sm:leading-[48px] uppercase"
             style={{
               background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
               WebkitBackgroundClip: "text",
@@ -109,24 +117,48 @@ function BuildTrade() {
             </span>{" "}
             for the next 30 days
           </div>
-          <p className="text-white text-[16px] sm:text-[20px] font-[700] leading-[22px] sm:leading-[27px] py-4">You can become a profitable trader in just 30 days of relentless focus.</p>
-          <p className="w-full xl:w-[667px] text-white text-[16px] sm:text-[20px] font-[500] leading-[22px] sm:leading-[27px]">
-            But only if you follow proven trading systems with the right strategies and mentorship.<br /><br />In the Global Trading Academy, you will gain direct access to expert traders and coaches who will guide you through a structured, step-by-step path designed to turn beginners into confident, skilled traders.<br /><br />Whether it's day trading, swing trading, or long-term investing, our community is built to help you succeed faster than you ever thought possible.
+          <p className="text-white text-[16px] sm:text-[20px] font-[700] leading-[22px] sm:leading-[27px] py-4">
+            You can become a profitable trader in just 30 days of relentless
+            focus.
           </p>
-          <div className="mt-6 uppercase w-full sm:w-[509px] h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
-                    style={{
-            background:
-              "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
-            boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
-            backdropFilter: "blur(12.5px)",
-          }}>
+          <p className="w-full xl:w-[667px] text-white text-[16px] sm:text-[20px] font-[500] leading-[22px] sm:leading-[27px]">
+            But only if you follow proven trading systems with the right
+            strategies and mentorship.
+            <br />
+            <br />
+            In the Global Trading Academy, you will gain direct access to expert
+            traders and coaches who will guide you through a structured,
+            step-by-step path designed to turn beginners into confident, skilled
+            traders.
+            <br />
+            <br />
+            Whether it's day trading, swing trading, or long-term investing, our
+            community is built to help you succeed faster than you ever thought
+            possible.
+          </p>
+          <a
+            href="https://sachin4803.graphy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 uppercase w-full sm:w-[509px] h-[50px] sm:h-[60px] border-[4px] border-white flex items-center justify-center px-2"
+            style={{
+              background:
+                "linear-gradient(92deg, rgba(109, 255, 119, 0.40) 30%, rgba(0, 255, 0, 0.20) 83.56%)",
+              boxShadow: "0 4px 50px 0 rgba(92, 246, 40, 0.18)",
+              backdropFilter: "blur(12.5px)",
+            }}
+          >
             <h2 className="font-[600] text-[18px] sm:text-[22px] md:text-[28px] leading-[22px] sm:leading-[28px] text-white text-center">
               start your 30 days journey
             </h2>
-          </div>
+          </a>
         </div>
         {/* right */}
-        <img src={teachTrade} alt="Image" className="w-full h-full object-cover max-w-[350px] sm:max-w-none mx-auto xl:mx-0" />
+        <img
+          src={teachTrade}
+          alt="Image"
+          className="w-full h-full object-cover max-w-[350px] sm:max-w-none mx-auto xl:mx-0"
+        />
       </div>
     </div>
   );

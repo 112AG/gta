@@ -51,7 +51,7 @@ function Promise() {
   ];
 
   return (
-    <div className=" font-inter px-4 lg:px-0 relative overflow-x-hidden ">
+    <div className=" font-inter px-4 lg:px-0 relative overflow-x-clip h-full ">
       <div
         className="uppercase text-center text-[48px] font-[900] leading-[48px]"
         style={{
@@ -73,7 +73,7 @@ function Promise() {
         {featureData.map((feature, index) => (
           <div
             key={index}
-            className={`flex w-[1523px] mx-auto justify-between items-start mb-[80px]`}
+            className={`flex w-[1523px] flex-col lg:flex-row mx-auto justify-between items-center lg:items-start mb-[80px]`}
           >
             {/* Left - Image */}
             <img
@@ -119,7 +119,7 @@ function Promise() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center gap-2 mt-4 text-white flex-col py-[172px]">
+      <div className="flex items-center justify-center gap-2 mt-4 text-white flex-col pt-[872px] lg:pt-[216px] pb-[185px]">
               <div className="mt-6 uppercase sm:w-[509px] h-[60px] border-[4px] border-white flex items-center justify-center"
               style={{
             background:

@@ -16,7 +16,7 @@ function Achievement() {
     certificate6,
   ];
   return (
-    <div className="pt-[120px] sm:pt-[233px] px-4 sm:px-0">
+    <div className="pt-[120px] sm:pt-[233px] px-8 sm:px-0">
       <h1 className="w-full lg:w-[739px] mx-auto sm:h-[123px] text-center text-[32px] sm:text-[48px] font-[900] leading-[38px] sm:leading-[55px] uppercase text-white mb-4 sm:mb-0">
         <span
           style={{
@@ -36,7 +36,7 @@ function Achievement() {
         and real milestones from our growing trading community.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] sm:gap-[24px] justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[6px] sm:gap-[24px] justify-items-center">
         {certificates.map((data, id) => (
           <div
             key={id}
