@@ -7,7 +7,7 @@ import 'remixicon/fonts/remixicon.css';
 function App() {
   return (
     <div className="bg-[#02040e] w-full h-full overflow-x-hidden" >
-      <div className="bg-[#dc2626] text-white text-center font-[700] text-[17px] xl:leading-[32px] 2xl:leading-[52px] ">
+      <div className="bg-[#dc2626] text-white text-center font-[700] text-[12px] sm:text-[17px] xl:leading-[32px] 2xl:leading-[52px] ">
         TRANSFORM YOUR TRADING IN 30 DAYS WITH PROVEN 1:1 MENTORSHIP • TRANSFORM
         YOUR TRADING IN 30 DAYS WITH PROVEN 1:1 MENTORSHIP • TRANSFORM YOUR
         TRADING IN 30 DAYS WITH PROVEN 1:1 MENTORSHIP •
@@ -17,7 +17,7 @@ function App() {
         <img
           src={background}
           alt="Global Trading Academy Background"
-          className="h-full w-full "
+          className="h-full w-full hidden sm:block"
         />
       </div>
       <Header />

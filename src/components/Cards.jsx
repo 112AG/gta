@@ -29,12 +29,12 @@ function Cards() {
     }
   ];
   return (
-    <div className="flex items-center justify-center flex-col font-inter pt-12">
+    <div className="flex items-center justify-center flex-col font-inter sm:pt-12">
 
-      <div className="flex-wrap md:flex-wrap-reverse  justify-center z-50 relative pt-[198px] flex gap-[17px]">
+      <div className="flex-wrap md:flex-wrap justify-center z-50 relative pt-[120px] sm:pt-[198px] flex gap-[17px]">
         {cards.map((data, idx) => (
                   <div
-                  className="w-[458px] lg:w-[360px] 2xl:w-[418px] h-[589px] py-[16px] px-[26px] flex flex-col justify-center items-center text-white"
+                  className="w-[318px] lg:w-[360px] 2xl:w-[418px] h-[526px] sm:h-[589px] py-[16px] px-[26px] flex flex-col justify-center items-center text-white"
                   key={idx}
                   style={{
                     background:
@@ -45,13 +45,13 @@ function Cards() {
                   }}
                 >
                   <img src={data.image} alt="clock"/>
-                  <h2 className="uppercase text-center text-[40px] font-[900] leading-[49px] pt-[15.72px]">
+                  <h2 className="uppercase text-center text-[32px] sm:text-[40px] font-[900] leading-[36px] sm:leading-[49px] pt-[15.72px]">
                     {data.heading}
                   </h2>
-                  <h6 className="uppercase text-center text-[20px] font-[900] leading-[27px] py-[8px]">
+                  <h6 className="uppercase text-center text-[14px] sm:text-[20px] font-[900] sm:leading-[27px] py-[8px]">
                     {data.subheading}
                   </h6>
-                  <p className="text-center text-[20px] font-[500] leading-[27px]">
+                  <p className="text-center text-[12px] sm:text-[20px] font-[500] sm:leading-[27px]">
                     {data.paragraph}
                   </p>
                   <h6 className="py-[16px] text-center text-[20px] font-[900] leading-[27px]">{data.bottomheading}</h6>

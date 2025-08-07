@@ -19,7 +19,7 @@ const HeroCards = () => {
     if (width > 1584) {
       setCardsToShow(3);
     } else if (width > 700) {
-      setCardsToShow(2);
+      setCardsToShow(1);
     } else {
       setCardsToShow(1);
     }
@@ -71,10 +71,10 @@ const HeroCards = () => {
   }, [index, cardsToShow, allClasses.length]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow- z-30">
       <button
         onClick={next}
-        className="absolute z-50 right-[6%] xl:right-[26%] top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 right-[6%] xl:right-[26%] top-[30%] sm:top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px]  h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         {/* Prev Arrow */}
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
@@ -88,7 +88,7 @@ const HeroCards = () => {
       <img src={leftblur} alt="" className="absolute -left-80 xl:-left-32 -top-12 z-30 h-[596px] opacity-95" />
       <img src={rightblur} alt="" className="absolute -right-80 xl:-right-32 -top-12 z-30 h-[596px] opacity-95" />
 
-      <div className="overflow-hidden h-[611.66px]">
+      <div className="overflow-hidden h-[440px] sm:h-[611.66px]">
         <div
           ref={sliderRef}
           className={`flex gap-[25px] ${transition ? "transition-transform duration-700 ease-in-out" : ""}`}
@@ -102,7 +102,7 @@ const HeroCards = () => {
             return (
               <div
                 key={i}
-                className="w-[881.19px] h-[495.66px] relative"
+                className="w-[881.19px] h-[240px] m:h-[495.66px] relative"
                 style={{ width: `${100 / allClasses.length}%` }}
               >
                 <img
@@ -144,7 +144,7 @@ const HeroCards = () => {
 
       <button
         onClick={prev}
-        className="absolute z-50 left-[6%] xl:left-[26%] top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 left-[6%] xl:left-[26%] top-[30%] sm:top-[40%] transform -translate-y-1/2 flex items-center justify-center w-[44px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         {/* Next Arrow */}
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">

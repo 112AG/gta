@@ -25,10 +25,10 @@ function Paths() {
         alt="image"
         className="w-[1244px] h-[703px] object-cover pt-12"
       />
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full xl:flex items-center justify-center hidden">
         <img src={connector} alt="image" className="" />
       </div>
-      <div className="w-full max-w-[1244px] bg-red-800 mx-auto flex justify-between items-center relative">
+      <div className="w-full max-w-[1244px] mx-auto flex justify-between items-center relative">
         {/* left */}
         <div className="w-[501px] text-white text-center flex items-center justify-center flex-col absolute -left-8 top-0">
           <div className="uppercase text-[20px] font-[700] leading-[42px]">
