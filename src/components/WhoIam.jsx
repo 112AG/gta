@@ -31,7 +31,7 @@ function WhoIam() {
             <h2 className="text-[28px] sm:text-[36px] font-[700] leading-[32px] sm:leading-[40px] text-[#a6f58b] mb-4 text-center">
               I am Sachin Rao
             </h2> 
-            <p className="text-white text-[16px] sm:text-[18px] font-[700] leading-[24px] sm:leading-[26px] text-center sm:text-left">
+            <p className="text-white text-[16px] sm:text-[18px] font-[100] leading-[24px] sm:leading-[26px] text-center sm:text-left">
               A former fitness entrepreneur turned full-time trader on a mission to
               build wealth, freedom, and future-proof financial skills.
               <br />
@@ -56,11 +56,11 @@ function WhoIam() {
               <br />
               Behind the scenes, I've quietly built powerful algorithmic trading
               bots across multiple financial markets designed for one purpose only
-              <span className="font-[400]">:
+              <span className="font-[100]">:
               to compound wealth silently, automatically, and smartly.</span>
               <br />
               <br />
-              These bots aren't for sale.<br/> <span className="font-[400]"> They're my private edge, used only for
+              These bots aren't for sale.<br/> <span className="font-[100]"> They're my private edge, used only for
               personal and funded account growth.</span>
               <br />
               <br />

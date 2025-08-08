@@ -70,17 +70,17 @@ const Footer = memo(() => {
 
       {/* Footer Content */}
       <div className="border-t-2 sm:border-t-4 border-white/10 max-w-[1236px] mx-auto pt-8 sm:pt-10 lg:pt-12">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-10 mb-8 lg:mb-12">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-0 sm:gap-8 lg:gap-10 mb-8 lg:mb-12">
           {/* Navigation and Disclaimer */}
-          <div className="w-full lg:flex-1">
-            <nav className="flex flex-wrap gap-4 sm:gap-6 lg:gap-[65px] list-none cursor-pointer mb-6">
-              <li className="text-white text-[13px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
+          <div className="w-full lg:flex-1 text-center">
+            <nav className="flex flex-wrap gap-4 sm:gap-6 lg:gap-[65px] list-none cursor-pointer mb-2 sm:mb-6">
+              <li className="text-white text-[10px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
                 Terms & Conditions
               </li>
-              <li className="text-white text-[13px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
+              <li className="text-white text-[10px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
                 Privacy Policy
               </li>
-              <li className="text-white text-[13px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
+              <li className="text-white text-[10px] sm:text-[14px] font-[400] leading-[24px] sm:leading-[28px] cursor-pointer hover:text-[#82e95f] transition-colors duration-300">
                 Manage Membership
               </li>
             </nav>
@@ -93,13 +93,13 @@ const Footer = memo(() => {
           </div>
 
           {/* Support Section */}
-          <div className="w-full lg:w-auto flex flex-col gap-2">
+          <div className="w-full lg:w-auto flex flex-col gap-0 sm:gap-2">
             <p className="uppercase text-white/50 text-[14px] sm:text-[15px] font-[400] leading-[24px] sm:leading-[28px]">
               support
             </p>
             <a
               href="mailto:support@globaltradingacademy.com"
-              className="text-white/70 font-inter text-[13px] sm:text-[14px] font-normal leading-[24px] sm:leading-[28px] underline cursor-pointer hover:text-[#82e95f] transition-colors duration-300 break-all sm:break-normal"
+              className="text-white/70 font-inter text-[11px] sm:text-[14px] font-normal leading-[24px] sm:leading-[28px] underline cursor-pointer hover:text-[#82e95f] transition-colors duration-300 break-all sm:break-normal"
             >
               support@globaltradingacademy.com
             </a>
@@ -107,7 +107,7 @@ const Footer = memo(() => {
               href="https://sachin4803.graphy.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="uppercase border border-white bg-[#82E95F] backdrop-blur-[12.5px] w-full sm:w-[230px] h-[55px] text-[#01030e] text-center text-[14px] sm:text-[16px] font-[700] leading-[20px] mt-[20px] cursor-pointer flex items-center justify-center hover:bg-[#6dd449] transition-colors duration-300"
+              className="uppercase border border-white bg-[#82E95F] backdrop-blur-[12.5px] w-[150px] sm:w-[230px] h-[40px] sm:h-[55px] text-[#01030e] text-center text-[14px] sm:text-[16px] font-[700] leading-[20px] mt-2 sm:mt-[20px] cursor-pointer flex items-center justify-center hover:bg-[#6dd449] transition-colors duration-300"
             >
               login
             </a>
@@ -121,7 +121,7 @@ const Footer = memo(() => {
               <p className="font-semibold mb-4 sm:mb-6 lg:mb-8">
                 <strong className="text-[#82e95f]">Disclaimer:</strong>
               </p>
-              <div className="text-left space-y-4 sm:space-y-6 pb-8">
+              <div className="text-center sm:text-left space-y-4 sm:space-y-6 pb-8">
                 <p>
                   Trading in financial markets, including forex, indices,
                   and derivatives, involves substantial risk and may not be suitable

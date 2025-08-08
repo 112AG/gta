@@ -6,11 +6,8 @@ import gradeint2 from "../assets/paths/gradient2.svg";
 
 function Program() {
   return (
-    <div className="h-full overflow-hidden w-full relative mb-[87px] bg-img mt-[0px] xl:mt-[236px]">
-      {" "}
-
-
-        <img
+    <div className="max-h-[800px] sm:min-h-[600px] lg:min-h-[700px] overflow-hidden w-full relative md:mb-[87px] bg-img mt-[0px] xl:mt-[236px] sm:py-8 md:py-12 lg:py-16">
+      <img
         src={gradeint1}
         alt="image"
         className="absolute bottom-0 w-[50%] sm:w-auto"
@@ -20,8 +17,7 @@ function Program() {
         alt="image"
         className="absolute bottom-0 right-0 w-[50%] sm:w-auto"
       />
-
-      <div className="relative top-[26%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
+      <div className="relative flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0 h-full min-h-[400px] sm:min-h-[500px]">
         <div className="flex justify-center">
           <img
             src={masterprogram}
@@ -29,7 +25,6 @@ function Program() {
             className="w-[200px] sm:w-[300px] lg:w-[400px] xl:w-auto h-auto object-contain"
           />
         </div>
-
         <div className="pt-4 sm:pt-8 xl:pt-22 flex flex-col items-center xl:items-start text-center xl:text-left">
           <div
             className="uppercase text-[28px] sm:text-[36px] lg:text-[42px] xl:text-[48px] font-[900] leading-[32px] sm:leading-[40px] lg:leading-[44px] xl:leading-[48px]"
@@ -42,7 +37,7 @@ function Program() {
             }}
           >
             our program
-          </div>{" "}
+          </div>
           <p className="uppercase text-[20px] sm:text-[24px] lg:text-[28px] xl:text-[32px] font-[800] leading-[28px] sm:leading-[32px] lg:leading-[40px] xl:leading-[54px] text-white">
             prop firm mastery
           </p>
