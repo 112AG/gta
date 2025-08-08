@@ -31,7 +31,7 @@ function WhoIam() {
             <h2 className="text-[28px] sm:text-[36px] font-[700] leading-[32px] sm:leading-[40px] text-[#a6f58b] mb-4 text-center">
               I am Sachin Rao
             </h2> 
-            <p className="text-white text-[16px] sm:text-[18px] font-[100] leading-[24px] sm:leading-[26px] text-center sm:text-left">
+            <p className="text-white text-[16px] sm:text-[18px] font-[100] leading-[24px] sm:leading-[26px] text-left">
               A former fitness entrepreneur turned full-time trader on a mission to
               build wealth, freedom, and future-proof financial skills.
               <br />
