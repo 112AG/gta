@@ -85,7 +85,7 @@ const Footer = memo(() => {
               </li>
             </nav>
 
-            <p className="w-full lg:max-w-[376px] text-white/50 text-[12px] sm:text-[13px] font-[400] leading-[24px] sm:leading-[28px]">
+            <p className="w-full lg:max-w-[376px] text-white/50 text-[12px] sm:text-[13px] font-[400] leading-[1px] sm:leading-[28px]">
               Educational content only. Results depend on individual effort and
               application. We do not guarantee profits or financial performance
               in any market.

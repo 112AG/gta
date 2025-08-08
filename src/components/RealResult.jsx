@@ -107,7 +107,7 @@ function RealResult() {
       {/* RIGHT ARROW */}
       <button
         onClick={next}
-        className="absolute z-50 right-[4%] sm:right-[6%] xl:right-[14%] top-[85%] sm:top-[72%] transform -translate-y-1/2 flex items-center justify-center w-[60px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 right-[4%] sm:right-[6%] xl:right-[14%] top-[65%] sm:top-[72%] transform -translate-y-1/2 flex items-center justify-center w-[60px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
           <path
@@ -120,7 +120,7 @@ function RealResult() {
       {/* LEFT ARROW */}
       <button
         onClick={prev}
-        className="absolute z-50 left-[4%] sm:left-[6%] xl:left-[14%] top-[85%] sm:top-[72%] transform -translate-y-1/2 flex items-center justify-center w-[60px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
+        className="absolute z-50 left-[4%] sm:left-[6%] xl:left-[14%] top-[65%] sm:top-[72%] transform -translate-y-1/2 flex items-center justify-center w-[60px] sm:w-[84px] h-[42px] p-[1px] border border-[#38ff38] rounded-full"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
           <path

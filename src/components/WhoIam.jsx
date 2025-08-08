@@ -6,7 +6,7 @@ function WhoIam() {
     <div className="font-inter px-4 lg:px-0 relative h-auto min-h-[1250px] xl:h-[1250px] w-full xl:w-[1580px] mx-auto mb-[100px] xl:mb-0">
       <div className="pt-8 xl:pt-0">
         <p className="text-white uppercase text-[16px] sm:text-[20px] text-center font-[700] leading-[32px] sm:leading-[48px]">
-          meet your metor
+          meet your mentor
         </p>
         <h2 className="uppercase text-[32px] sm:text-[40px] xl:text-[48px] text-center font-[900] leading-[36px] sm:leading-[44px] xl:leading-[48px] text-white mb-8 xl:mb-0">
           <span
@@ -56,11 +56,11 @@ function WhoIam() {
               <br />
               Behind the scenes, I've quietly built powerful algorithmic trading
               bots across multiple financial markets designed for one purpose only
-              <span className="font-[100]">:
+              <span>:
               to compound wealth silently, automatically, and smartly.</span>
               <br />
               <br />
-              These bots aren't for sale.<br/> <span className="font-[100]"> They're my private edge, used only for
+              These bots aren't for sale.<br/> <span> They're my private edge, used only for
               personal and funded account growth.</span>
               <br />
               <br />
@@ -77,7 +77,7 @@ function WhoIam() {
         <div className="hidden xl:block">
           <img src={owner} alt="Image" className="relative -left-50 top-8" />
 
-          <div className="w-[689px] absolute top-44 right-12 z-50">
+          <div className="w-[679px] absolute top-38 right-62 2xl:right-16 z-50">
             <h2 className="text-[40px] font-[700] leading-[27px] text-[#a6f58b] mb-[8px]">
               I am Sachin Rao
             </h2> 

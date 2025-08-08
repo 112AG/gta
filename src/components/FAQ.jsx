@@ -7,7 +7,7 @@ const faqData = [
   {
     question: "How fast can I get funded?",
     answer:
-      "Many students pass their first prop firm challenge within 1–3 months when they follow Sachin’s system and risk rules seriously.",
+      "Many students pass their first prop firm challenge within 1–3 months when they follow Sachin's system and risk rules seriously.",
   },
 ];
 
@@ -47,13 +47,24 @@ function FAQ() {
               <h3 className="text-white font-medium text-sm sm:text-base pr-4">
                 {item.question}
               </h3>
-              <span className="text-white text-lg">
-                {openIndex !== index ? (
-                  <i className="ri-arrow-down-s-line text-xl"></i>
-                ) : (
-                  <i className="ri-arrow-right-s-line text-xl"></i>
-                )}
-              </span>
+              <div 
+                className={`text-white text-xl transform transition-transform duration-300 ${
+                  openIndex === index ? 'rotate-180' : ''
+                }`}
+                style={{
+                  width: '0',
+                  height: '0',
+                  borderLeft: '6px solid transparent',
+                  borderRight: '6px solid transparent',
+                  borderTop: '8px solid white',
+                  transform: openIndex === index ? 'rotate(90deg)' : 'rotate(0deg)'
+                }}
+              >
+              </div>
+              {/* Alternative: Use Unicode arrows */}
+              {/* <span className="text-white text-xl">
+                {openIndex !== index ? '▼' : '▲'}
+              </span> */}
             </div>
 
             {openIndex === index && item.answer && (

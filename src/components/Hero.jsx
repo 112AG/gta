@@ -14,7 +14,7 @@ function Hero() {
           <h1 className="w-full xl:w-[666px] xl:h-[201px] font-[900] text-[28px] sm:text-[32px] md:text-[32px] xl:text-[48px] leading-[32px] sm:leading-[42px] md:leading-[38px] xl:leading-[55px] uppercase text-white mb-4 lg:mb-0">
             <span className="text-[#9DF280]">MONEY</span>{" "}
             <span>FOLLOWS SKILL</span>
-            <br className="hidden sm:block lg:block" />
+            <br className="hidden lg:block" />
             <span className="font-[500]">
               AND WE BUILD THAT <span className="text-[#9DF280]">SKILL</span>{" "}
               <br className="hidden sm:block lg:block" />
@@ -93,7 +93,7 @@ function Hero() {
           <img
             src={coursee}
             alt="main-image"
-            className="w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[742px] h-auto object-cover"
+            className="w-full max-w-[518px] sm:max-w-[600px] md:max-w-[768px] lg:max-w-[600px] xl:max-w-[742px] h-auto object-cover"
           />
         </div>
       </div>
