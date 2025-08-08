@@ -134,12 +134,12 @@ function RealResult() {
       <img
         src={leftblur}
         alt=""
-        className="absolute -left-40 sm:-left-80 xl:-left-32 top-[300px] z-30 object-cover h-[400px] sm:h-[653px] opacity-60 xl:opacity-95 hidden sm:block"
+        className="absolute -left-40 sm:-left-80 xl:-left-32 top-[40%] z-30 object-cover h-[400px] sm:h-[753px] opacity-60 xl:opacity-75 hidden sm:block"
       />
       <img
         src={rightblur}
         alt=""
-        className="absolute -right-40 sm:-right-80 xl:-right-32 top-[300px] z-30 object-cover h-[400px] sm:h-[653px] opacity-60 xl:opacity-95 hidden sm:block"
+        className="absolute -right-40 sm:-right-80 xl:-right-32 top-[40%] z-30 object-cover h-[400px] sm:h-[753px] opacity-60 xl:opacity-75 hidden sm:block"
       />
 
       {/* CAROUSEL */}

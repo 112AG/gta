@@ -54,7 +54,7 @@ function Aboutus() {
       image: seven,
       name: "Mohammed Asif",
       role: "Working Professional",
-      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It's more than just a course; it's a system!",
     },
     {
       image: eight,
@@ -129,7 +129,7 @@ function Aboutus() {
       image: seven,
       name: "Mohammed Asif",
       role: "Working Professional",
-      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It's more than just a course; it's a system!",
     },
     {
       image: eight,
@@ -204,7 +204,7 @@ function Aboutus() {
       image: seven,
       name: "Mohammed Asif",
       role: "Working Professional",
-      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It’s more than just a course; it’s a system!",
+      text: "I joined to learn about intraday trading, but this course opened my eyes to many other profitable ways. It's more than just a course; it's a system!",
     },
     {
       image: eight,
@@ -242,137 +242,185 @@ function Aboutus() {
   const repeatImages = (arr, times = 2) => Array(times).fill(arr).flat();
 
   return (
-    <div>
-      <h2 className="uppercase text-[28px] sm:text-[36px] md:text-[44px] xl:text-[48px] pt-[120px] sm:pt-[200px] xl:pt-[399px] pb-[40px] xl:pb-[81px] text-center font-[900] leading-tight text-white mb-8">
-        our &nbsp;
-        <span
-          style={{
-            background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
-        >
-          students &nbsp;
-        </span>
-        can't stop <br className="block xl:hidden"/> talking
-        <span
-          style={{
-            background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
-        >
-          &nbsp; about us
-        </span>
-      </h2>
+    <div className="px-4 sm:px-6 lg:px-8">
+      {/* Heading Section */}
+      <div className="max-w-6xl mx-auto">
+        <h2 className="uppercase text-[20px] xs:text-[24px] sm:text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] 
+                       pt-[80px] sm:pt-[120px] lg:pt-[200px] xl:pt-[399px] 
+                       pb-[30px] sm:pb-[40px] xl:pb-[81px] 
+                       text-center font-[900] leading-tight text-white mb-4 sm:mb-8 px-2">
+          our &nbsp;
+          <span
+            style={{
+              background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            students &nbsp;
+          </span>
+          can't stop <br className="block sm:hidden lg:block xl:hidden"/> talking
+          <span
+            style={{
+              background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            &nbsp; about us
+          </span>
+        </h2>
+      </div>
 
-      <div className="space-y-2 sm:space-y-6">
+      {/* Reviews Carousel */}
+      <div className="space-y-2 sm:space-y-4 lg:space-y-6">
         {/* Layer 1: scroll right */}
         <div className="overflow-hidden w-full">
           <div
-            className="flex gap-2 sm:gap-4 animate-scroll-right"
+            className="flex gap-2 sm:gap-3 lg:gap-4 animate-scroll-right"
             style={{ width: "max-content" }}
           >
             {[...workImagesOne, ...workImagesOne].map((data, idx) => (
               <div
                 key={idx}
-                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
+                className="flex w-[240px] sm:w-[320px] lg:w-[460px] 
+                          h-[140px] sm:h-[180px] lg:h-[240px] 
+                          rounded-lg sm:rounded-xl overflow-hidden shadow-lg font-inter flex-shrink-0"
               >
                 {/* Left - Text Section */}
-                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
-                  <p>{data.text}</p>
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center 
+                               px-2 sm:px-4 lg:px-6 text-center 
+                               text-[10px] sm:text-[12px] lg:text-[14px] 
+                               leading-[14px] sm:leading-[18px] lg:leading-[22px] font-medium">
+                  <p className="line-clamp-4 sm:line-clamp-6 lg:line-clamp-none">{data.text}</p>
                 </div>
 
                 {/* Right - Image and Name Section */}
-                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                <div className="bg-[#2F4F30] w-[110px] sm:w-[140px] lg:w-[180px] 
+                               flex flex-col items-center justify-center gap-1 sm:gap-2 
+                               px-2 sm:px-3 lg:px-4 py-2 sm:py-3 lg:py-4 text-white">
                   <img
                     src={data.image}
-                    alt="Neha Sharma"
-                    className="w-[121px] h-[121px] rounded-full object-cover"
+                    alt={data.name}
+                    className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] lg:w-[121px] lg:h-[121px] 
+                              rounded-full object-cover flex-shrink-0"
                   />
-                  <div className="text-center mt-2">
-                    <p className="text-[16px] font-bold leading-[20px]">
+                  <div className="text-center mt-1 sm:mt-2 min-h-0">
+                    <p className="text-[12px] sm:text-[14px] lg:text-[16px] font-bold 
+                                 leading-[14px] sm:leading-[16px] lg:leading-[20px] 
+                                 line-clamp-2">
                       {data.name}
                     </p>
-                    <p className="text-[10px] text-[#CFCFCF] mt-1">
-                      {data.role}
-                    </p>
+                    {data.role && (
+                      <p className="text-[8px] sm:text-[9px] lg:text-[10px] text-[#CFCFCF] 
+                                   mt-0.5 sm:mt-1 line-clamp-1">
+                        {data.role}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         {/* Layer 2: scroll left */}
         <div className="overflow-hidden w-full">
           <div
-            className="flex gap-2 sm:gap-4 animate-scroll-left"
+            className="flex gap-2 sm:gap-3 lg:gap-4 animate-scroll-left"
             style={{ width: "max-content" }}
           >
             {[...workImagesTwo, ...workImagesTwo].map((data, idx) => (
               <div
                 key={idx}
-                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
+                className="flex w-[280px] sm:w-[380px] lg:w-[460px] 
+                          h-[180px] sm:h-[200px] lg:h-[240px] 
+                          rounded-lg sm:rounded-xl overflow-hidden shadow-lg font-inter flex-shrink-0"
               >
                 {/* Left - Text Section */}
-                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
-                  <p>{data.text}</p>
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center 
+                               px-3 sm:px-4 lg:px-6 text-center 
+                               text-[11px] sm:text-[12px] lg:text-[14px] 
+                               leading-[16px] sm:leading-[18px] lg:leading-[22px] font-medium">
+                  <p className="line-clamp-6 sm:line-clamp-none">{data.text}</p>
                 </div>
 
                 {/* Right - Image and Name Section */}
-                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                <div className="bg-[#2F4F30] w-[110px] sm:w-[140px] lg:w-[180px] 
+                               flex flex-col items-center justify-center gap-1 sm:gap-2 
+                               px-2 sm:px-3 lg:px-4 py-2 sm:py-3 lg:py-4 text-white">
                   <img
                     src={data.image}
-                    alt="Neha Sharma"
-                    className="w-[121px] h-[121px] rounded-full object-cover"
+                    alt={data.name}
+                    className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] lg:w-[121px] lg:h-[121px] 
+                              rounded-full object-cover flex-shrink-0"
                   />
-                  <div className="text-center mt-2">
-                    <p className="text-[16px] font-bold leading-[20px]">
+                  <div className="text-center mt-1 sm:mt-2 min-h-0">
+                    <p className="text-[12px] sm:text-[14px] lg:text-[16px] font-bold 
+                                 leading-[14px] sm:leading-[16px] lg:leading-[20px] 
+                                 line-clamp-2">
                       {data.name}
                     </p>
-                    <p className="text-[10px] text-[#CFCFCF] mt-1">
-                      {data.role}
-                    </p>
+                    {data.role && (
+                      <p className="text-[8px] sm:text-[9px] lg:text-[10px] text-[#CFCFCF] 
+                                   mt-0.5 sm:mt-1 line-clamp-1">
+                        {data.role}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
         {/* Layer 3: scroll right (slower) */}
         <div className="overflow-hidden w-full">
           <div
-            className="flex gap-2 sm:gap-4 animate-scroll-right-slow"
+            className="flex gap-2 sm:gap-3 lg:gap-4 animate-scroll-right-slow"
             style={{ width: "max-content" }}
           >
             {repeatImages(workImagesThree).map((data, idx) => (
               <div
                 key={idx}
-                className="flex w-[460px] h-[240px] rounded-xl overflow-hidden shadow-lg font-inter"
+                className="flex w-[280px] sm:w-[380px] lg:w-[460px] 
+                          h-[180px] sm:h-[200px] lg:h-[240px] 
+                          rounded-lg sm:rounded-xl overflow-hidden shadow-lg font-inter flex-shrink-0"
               >
                 {/* Left - Text Section */}
-                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center px-6 text-center text-[14px] leading-[22px] font-medium">
-                  <p>{data.text}</p>
+                <div className="bg-[#0C111F] text-white flex-1 flex items-center justify-center 
+                               px-3 sm:px-4 lg:px-6 text-center 
+                               text-[11px] sm:text-[12px] lg:text-[14px] 
+                               leading-[16px] sm:leading-[18px] lg:leading-[22px] font-medium">
+                  <p className="line-clamp-6 sm:line-clamp-none">{data.text}</p>
                 </div>
 
                 {/* Right - Image and Name Section */}
-                <div className="bg-[#2F4F30] w-[180px] flex flex-col items-center justify-center gap-2 px-4 py-4 text-white">
+                <div className="bg-[#2F4F30] w-[110px] sm:w-[140px] lg:w-[180px] 
+                               flex flex-col items-center justify-center gap-1 sm:gap-2 
+                               px-2 sm:px-3 lg:px-4 py-2 sm:py-3 lg:py-4 text-white">
                   <img
                     src={data.image}
-                    alt="Neha Sharma"
-                    className="w-[121px] h-[121px] rounded-full object-cover"
+                    alt={data.name}
+                    className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] lg:w-[121px] lg:h-[121px] 
+                              rounded-full object-cover flex-shrink-0"
                   />
-                  <div className="text-center mt-2">
-                    <p className="text-[16px] font-bold leading-[20px]">
+                  <div className="text-center mt-1 sm:mt-2 min-h-0">
+                    <p className="text-[12px] sm:text-[14px] lg:text-[16px] font-bold 
+                                 leading-[14px] sm:leading-[16px] lg:leading-[20px] 
+                                 line-clamp-2">
                       {data.name}
                     </p>
-                    <p className="text-[10px] text-[#CFCFCF] mt-1">
-                      {data.role}
-                    </p>
+                    {data.role && (
+                      <p className="text-[8px] sm:text-[9px] lg:text-[10px] text-[#CFCFCF] 
+                                   mt-0.5 sm:mt-1 line-clamp-1">
+                        {data.role}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -380,6 +428,66 @@ function Aboutus() {
           </div>
         </div>
       </div>
+
+      {/* Add required CSS for animations */}
+      <style jsx>{`
+        @keyframes scroll-right {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        
+        @keyframes scroll-left {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
+        }
+        
+        .animate-scroll-right {
+          animation: scroll-right 60s linear infinite;
+        }
+        
+        .animate-scroll-left {
+          animation: scroll-left 60s linear infinite;
+        }
+        
+        .animate-scroll-right-slow {
+          animation: scroll-right 80s linear infinite;
+        }
+        
+        .line-clamp-1 {
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
+        .line-clamp-2 {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
+        .line-clamp-6 {
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        
+        @media (max-width: 640px) {
+          .animate-scroll-right {
+            animation: scroll-right 80s linear infinite;
+          }
+          
+          .animate-scroll-left {
+            animation: scroll-left 60s linear infinite;
+          }
+          
+          .animate-scroll-right-slow {
+            animation: scroll-right 70s linear infinite;
+          }
+        }
+      `}</style>
     </div>
   );
 }

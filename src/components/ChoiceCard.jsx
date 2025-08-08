@@ -21,7 +21,7 @@ function ChoiceCard() {
 
   return (
     <div className="2xl:mt-[144px] relative bg-card mt-0 xl:mt-[144px]">
-      <div className="xl:absolute xl:top-[22%] xl:left-0 xl:right-0 flex flex-col items-center pt-8 xl:pt-0 px-4 xl:px-0">
+      <div className="xl:absolute xl:top-[22%] xl:left-0 xl:right-0 flex flex-col items-center pt-8 xl:pt-0">
         <p className="text-white uppercase text-[16px] sm:text-[20px] font-[700] leading-[32px] sm:leading-[48px]">
           take action
         </p>

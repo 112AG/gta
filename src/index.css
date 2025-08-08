@@ -183,3 +183,36 @@ div::-webkit-scrollbar {
   width: 100%;
   height: 1600px;
 }
+
+@media (max-width: 768px) {
+  .bg-card {
+    height: auto; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+}
+
+.hero-background{
+      background-image: url('./assets/heroImages/globalTradingAcademy-background.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1600px;
+}
+
+/* top red bar scroller */
+@keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee 60s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }

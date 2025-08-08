@@ -21,7 +21,7 @@ function Program() {
         className="absolute bottom-0 right-0 w-[50%] sm:w-auto"
       />
 
-      <div className="relative top-[20%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
+      <div className="relative top-[26%] sm:top-[30%] xl:top-[36%] flex justify-center items-center flex-col xl:flex-row gap-8 sm:gap-16 xl:gap-[218px] w-full px-4 sm:px-8 xl:px-0">
         <div className="flex justify-center">
           <img
             src={masterprogram}

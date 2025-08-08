@@ -38,7 +38,7 @@ function Hero() {
               backdropFilter: "blur(12.5px)",
             }}
           >
-            <h2 className="font-[600] text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-white text-center">
+            <h2 className="font-[600] text-[16px] sm:text-[22px] md:text-[26px] lg:text-[28px] leading-[22px] sm:leading-[26px] lg:leading-[28px] text-white text-center">
               start earning through skill
             </h2>
           </a>

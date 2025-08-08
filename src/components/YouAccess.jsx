@@ -44,7 +44,7 @@ function YouAccess() {
     },
     {
       image: ultimatekickstart,
-      title: "The Aspiring Trader’s Playbook: Ultimate Kickstart to Trading",
+      title: "The Aspiring Trader's Playbook: Ultimate Kickstart to Trading",
       points: [
         "Understand how trading actually works — from scratch",
         "Learn the essential tools, terms & setup in simple language",
@@ -135,9 +135,9 @@ function YouAccess() {
   ];
 
   return (
-    <div className=" h-full font-inter px-12 lg:px-0">
+    <div className="h-full font-inter px-4 sm:px-6 md:px-8 lg:px-12 xl:px-0">
       <div
-        className="uppercase text-[20px] font-[700] leading-[48px] text-center"
+        className="uppercase text-[16px] sm:text-[18px] lg:text-[20px] font-[700] leading-[32px] sm:leading-[40px] lg:leading-[48px] text-center mb-4"
         style={{
           background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
           WebkitBackgroundClip: "text",
@@ -147,17 +147,18 @@ function YouAccess() {
         }}
       >
         what will you access
-      </div>{" "}
-      <div className="uppercase text-center text-[48px] font-[900] leading-[55px] text-white">
+      </div>
+      <div className="uppercase text-center text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-[900] leading-[32px] sm:leading-[40px] md:leading-[46px] lg:leading-[55px] text-white mb-8 lg:mb-12 px-2">
         all <span className="text-[#B1F999]">tools</span>, all{" "}
         <span className="text-[#B1F999]">access</span>, one{" "}
         <span className="text-[#B1F999]">program.</span>
       </div>
-      <div className="flex flex-col gap-[73px] items-center py-[48px]">
+
+      <div className="flex flex-col gap-6 sm:gap-8 lg:gap-[73px] items-center py-6 sm:py-8 lg:py-[48px]">
         {tradingSections.map((section, index) => (
           <div
             key={index}
-            className="w-full max-w-[1388px] text-white h-[341px] p-[32px] flex flex-col sm:flex-row justify-between items-center"
+            className="w-full max-w-[500px] sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1388px] text-white h-auto lg:h-[341px] p-4 sm:p-6 lg:p-[32px] flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0"
             style={{
               background:
                 "linear-gradient(92deg, rgba(130, 233, 95, 0.14) 5.1%, rgba(131, 234, 96, 0.31) 83.56%)",
@@ -166,65 +167,129 @@ function YouAccess() {
               WebkitBackdropFilter: "blur(12.5px)",
             }}
           >
-            {/* Left: Title and Bullet Points */}
-            <div className="flex flex-col gap-[12px]">
-              <h1 className="text-[32px] leading-[33px] font-[600] pb-[12px]">
-                {section.title}
-              </h1>
-              <div className="flex flex-col gap-[8px]">
-                {section.points.map((point, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-[8px] w-full py-[11px] px-[30px] rounded-full bg-[#ffffff11]"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="19"
-                      viewBox="0 0 24 19"
-                      fill="none"
+            {/* Mobile: Image first, then content */}
+            <div className="lg:hidden w-full flex flex-col items-center">
+              {/* Image */}
+              <div className="mb-6">
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  className="h-[180px] w-[180px] sm:h-[200px] sm:w-[200px] object-contain"
+                />
+              </div>
+
+              {/* Title and Bullet Points */}
+              <div className="flex flex-col gap-3 sm:gap-4 w-full">
+                <h1 className="text-[20px] sm:text-[24px] md:text-[28px] leading-[24px] sm:leading-[28px] md:leading-[33px] font-[600] text-center pb-2 sm:pb-3">
+                  {section.title}
+                </h1>
+                <div className="flex flex-col gap-2 sm:gap-3">
+                  {section.points.map((point, i) => (
+                    <div
+                      key={i}
+                      className="flex items-start gap-2 sm:gap-3 w-full py-2 sm:py-3 px-4 sm:px-5 rounded-full bg-[#ffffff11]"
                     >
-                      <g clipPath="url(#clip0_401_1025)">
-                        <path
-                          d="M22.5 2.68164L8.0625 17.1191L1.5 10.5566"
-                          stroke="white"
-                          strokeWidth="2.25"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_401_1025">
-                          <rect
-                            width="24"
-                            height="18"
-                            fill="white"
-                            transform="translate(0 0.900391)"
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="14"
+                        viewBox="0 0 24 19"
+                        fill="none"
+                        className="flex-shrink-0 mt-1 sm:w-5 sm:h-4"
+                      >
+                        <g clipPath="url(#clip0_401_1025)">
+                          <path
+                            d="M22.5 2.68164L8.0625 17.1191L1.5 10.5566"
+                            stroke="white"
+                            strokeWidth="2.25"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <p className="text-[17.55px] font-[700] leading-[28.8px]">
-                      {point}
-                    </p>
-                  </div>
-                ))}
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_401_1025">
+                            <rect
+                              width="24"
+                              height="18"
+                              fill="white"
+                              transform="translate(0 0.900391)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p className="text-[14px] sm:text-[15px] md:text-[16px] font-[700] leading-[20px] sm:leading-[22px] md:leading-[24px]">
+                        {point}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Right: Image */}
-            <div className="pt-8 sm:pt-0">
-              <img
-                src={section.image}
-                alt={section.title}
-                className="h-[259px] w-[259px] object-contain"
-              />
+            {/* Desktop Layout - Original */}
+            <div className="hidden lg:flex w-full justify-between items-center">
+              {/* Left: Title and Bullet Points */}
+              <div className="flex flex-col gap-[12px]">
+                <h1 className="text-[32px] leading-[33px] font-[600] pb-[12px]">
+                  {section.title}
+                </h1>
+                <div className="flex flex-col gap-[8px]">
+                  {section.points.map((point, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center gap-[8px] w-full py-[11px] px-[30px] rounded-full bg-[#ffffff11]"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="19"
+                        viewBox="0 0 24 19"
+                        fill="none"
+                      >
+                        <g clipPath="url(#clip0_401_1025)">
+                          <path
+                            d="M22.5 2.68164L8.0625 17.1191L1.5 10.5566"
+                            stroke="white"
+                            strokeWidth="2.25"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_401_1025">
+                            <rect
+                              width="24"
+                              height="18"
+                              fill="white"
+                              transform="translate(0 0.900391)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p className="text-[17.55px] font-[700] leading-[28.8px]">
+                        {point}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right: Image */}
+              <div className="pt-8 sm:pt-0">
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  className="h-[259px] w-[259px] object-contain"
+                />
+              </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Price and CTA Section */}
       <div
-        className="w-[750px] mx-auto h-[341px] py-[16px] px-[26px] flex flex-col justify-center items-center"
+        className="w-full max-w-[500px] sm:max-w-[600px] lg:max-w-[750px] mx-auto h-auto lg:h-[341px] py-4 sm:py-6 lg:py-[16px] px-4 sm:px-6 lg:px-[26px] flex flex-col justify-center items-center gap-4 lg:gap-2"
         style={{
           background:
             "linear-gradient(92deg, rgba(130, 233, 95, 0.14) 5.1%, rgba(131, 234, 96, 0.31) 83.56%)",
@@ -233,11 +298,11 @@ function YouAccess() {
           WebkitBackdropFilter: "blur(12.5px)",
         }}
       >
-        <p className="text-[13px] font-[700] leading-[48px] uppercase text-[#ff2c2c]">
+        <p className="text-[11px] sm:text-[12px] lg:text-[13px] font-[700] leading-[32px] sm:leading-[40px] lg:leading-[48px] uppercase text-[#ff2c2c] text-center">
           real price $5000 usd
         </p>
         <h3
-          className="text-[64px] font-[900] leading-[48px] uppercase"
+          className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-[900] leading-[32px] sm:leading-[40px] lg:leading-[48px] uppercase"
           style={{
             background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
             WebkitBackgroundClip: "text",
@@ -252,36 +317,38 @@ function YouAccess() {
           href="https://sachin4803.graphy.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 uppercase cursor-pointer sm:w-[509px] h-[60px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center"
+          className="mt-4 lg:mt-6 uppercase cursor-pointer w-full max-w-[400px] sm:max-w-[509px] h-[50px] sm:h-[56px] lg:h-[60px] bg-[#00ff004f] border-[2px] sm:border-[3px] lg:border-[4px] border-white flex items-center justify-center hover:bg-[#00ff006f] transition-colors"
         >
-          <h2 className="font-[600] text-[22px] sm:text-[28px] leading-[28px] text-white">
+          <h2 className="font-[600] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-white px-2 text-center">
             join global trading academy
           </h2>
         </a>
 
         <a 
           href="https://wa.me/918283863866"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-[196px] h-[62px] border-[1px] border-white bg-[#82e95f] flex items-center justify-center gap-[5px] mt-[29px]">
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full max-w-[180px] sm:max-w-[196px] h-[50px] sm:h-[56px] lg:h-[62px] border-[1px] border-white bg-[#82e95f] flex items-center justify-center gap-1 sm:gap-[5px] mt-4 sm:mt-6 lg:mt-[29px] hover:bg-[#6dd149] transition-colors"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="29"
-            height="29"
+            width="24"
+            height="24"
             viewBox="0 0 29 29"
             fill="none"
+            className="sm:w-7 sm:h-7"
           >
             <path
               d="M22.8122 16.8479L18.3502 14.6171C18.1746 14.5296 17.979 14.49 17.7831 14.5022C17.5873 14.5144 17.3981 14.5781 17.2347 14.6868L15.1864 16.0532C14.2461 15.5363 13.4723 14.7626 12.9554 13.8224L14.3219 11.7743C14.4306 11.6109 14.4943 11.4218 14.5065 11.2259C14.5188 11.0301 14.4791 10.8345 14.3916 10.6589L12.1606 6.19736C12.0682 6.01063 11.9252 5.85353 11.748 5.74388C11.5708 5.63422 11.3665 5.57638 11.1581 5.57692C9.67885 5.57692 8.2602 6.16449 7.21422 7.21037C6.16825 8.25624 5.58062 9.67475 5.58062 11.1538C5.58431 14.4067 6.87827 17.5253 9.17862 19.8254C11.479 22.1256 14.5978 23.4194 17.851 23.4231C18.5835 23.4231 19.3087 23.2788 19.9854 22.9986C20.6621 22.7183 21.277 22.3075 21.7949 21.7896C22.3128 21.2718 22.7236 20.657 23.0039 19.9804C23.2842 19.3037 23.4285 18.5785 23.4285 17.8462C23.4286 17.6389 23.3711 17.4358 23.2622 17.2595C23.1533 17.0831 22.9975 16.9406 22.8122 16.8479ZM17.851 21.1923C15.1893 21.1894 12.6375 20.1308 10.7553 18.2488C8.87323 16.3669 7.81456 13.8153 7.81161 11.1538C7.81139 10.3802 8.07927 9.63041 8.56967 9.03202C9.06007 8.43364 9.74268 8.02365 10.5013 7.87183L12.1021 11.0786L10.7398 13.1058C10.638 13.2585 10.5754 13.4339 10.5577 13.6165C10.5399 13.7992 10.5675 13.9834 10.638 14.1528C11.4361 16.0495 12.9451 17.5584 14.842 18.3564C15.012 18.43 15.1976 18.4602 15.3821 18.4441C15.5666 18.4281 15.7442 18.3663 15.8989 18.2644L17.9361 16.9064L21.1431 18.507C20.9901 19.2665 20.5783 19.9493 19.9779 20.439C19.3775 20.9287 18.6258 21.195 17.851 21.1923ZM14.5046 3.45317e-07C12.0009 -0.000545927 9.53981 0.647046 7.36074 1.87974C5.18168 3.11244 3.35891 4.88825 2.06985 7.03431C0.780798 9.18038 0.0693719 11.6236 0.00482164 14.1262C-0.0597286 16.6287 0.524796 19.1053 1.7015 21.315L0.118898 26.0624C-0.0121942 26.4554 -0.0312187 26.8772 0.0639565 27.2805C0.159132 27.6837 0.364745 28.0525 0.657752 28.3455C0.950758 28.6385 1.31958 28.844 1.72287 28.9392C2.12617 29.0344 2.548 29.0154 2.94109 28.8843L7.6889 27.3018C9.63372 28.3361 11.7886 28.9138 13.9901 28.9911C16.1915 29.0683 18.3816 28.6431 20.3942 27.7476C22.4067 26.8521 24.1888 25.51 25.6051 23.8231C27.0214 22.1361 28.0348 20.1487 28.5683 18.0117C29.1018 15.8747 29.1414 13.6442 28.684 11.4896C28.2267 9.33503 27.2845 7.31293 25.9289 5.57681C24.5733 3.84068 22.84 2.43617 20.8605 1.46987C18.881 0.50358 16.7074 0.000903782 14.5046 3.45317e-07ZM14.5046 26.7692C12.3474 26.7707 10.2282 26.2027 8.36099 25.1226C8.22428 25.0434 8.07228 24.994 7.91507 24.9779C7.75786 24.9618 7.59902 24.9793 7.44907 25.0292L2.23415 26.7692L3.97292 21.5548C4.02304 21.405 4.04076 21.2462 4.02489 21.089C4.00903 20.9318 3.95994 20.7798 3.88089 20.643C2.52832 18.3047 1.98527 15.5855 2.33598 12.9072C2.68669 10.2288 3.91156 7.74107 5.82058 5.82983C7.72959 3.91858 10.216 2.69068 12.8942 2.33662C15.5724 1.98256 18.2925 2.52213 20.6327 3.87162C22.9729 5.22111 24.8023 7.30508 25.8371 9.80026C26.8719 12.2954 27.0542 15.0623 26.3559 17.6717C25.6575 20.2811 24.1175 22.5871 21.9746 24.232C19.8318 25.8769 17.206 26.7688 14.5046 26.7692Z"
               fill="#01030E"
             />
           </svg>
-          <p className="text-[24px] leading-[48px] font-[700] text[#02040e]">
+          <p className="text-[18px] sm:text-[20px] lg:text-[24px] leading-[24px] sm:leading-[32px] lg:leading-[48px] font-[700] text-[#02040e]">
             Support
           </p>
         </a>
 
-        <p className="text-white text-[10px] font-[400] leading-[48px]">
+        <p className="text-white text-[8px] sm:text-[9px] lg:text-[10px] font-[400] leading-[20px] sm:leading-[32px] lg:leading-[48px] text-center px-2">
           7 days money back guarantee | Direct refunds with no questions{" "}
         </p>
       </div>
