@@ -36,11 +36,11 @@ function Achievement() {
         and real milestones from our growing trading community.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[6px] sm:gap-[24px] justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[16px] sm:gap-[24px] justify-items-center">
         {certificates.map((data, id) => (
           <div
             key={id}
-            className="w-[280px] sm:w-[320px] md:w-[468px] h-[420px] sm:h-[589px] py-[12px] sm:py-[16px] px-[16px] sm:px-[26px] flex flex-col justify-center items-center text-white"
+            className="w-[280px] sm:w-[440px] md:w-[428px] h-[420px] sm:h-[589px] py-[12px] sm:py-[16px] px-[16px] sm:px-[26px] flex flex-col justify-center items-center text-white"
             style={{
               background:
                 "linear-gradient(92deg, rgba(130, 233, 95, 0.14) 5.1%, rgba(131, 234, 96, 0.31) 83.56%)",
