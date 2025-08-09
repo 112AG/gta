@@ -317,10 +317,10 @@ function YouAccess() {
           href="https://sachin4803.graphy.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 lg:mt-6 uppercase cursor-pointer w-full max-w-[400px] sm:max-w-[509px] h-[50px] sm:h-[56px] lg:h-[60px] bg-[#00ff004f] border-[2px] sm:border-[3px] lg:border-[4px] border-white flex items-center justify-center hover:bg-[#00ff006f] transition-colors"
+          className="mt-4 lg:mt-6 uppercase cursor-pointer w-full max-w-[400px] sm:max-w-[409px] h-[50px] sm:h-[56px] lg:h-[70px] bg-[#00ff004f] border-[2px] sm:border-[3px] lg:border-[4px] border-white flex items-center justify-center hover:bg-[#00ff006f] transition-colors py-3"
         >
           <h2 className="font-[600] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] leading-[20px] sm:leading-[24px] lg:leading-[28px] text-white px-2 text-center">
-            join global trading academy
+            join funded army
           </h2>
         </a>
 

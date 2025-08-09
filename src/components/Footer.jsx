@@ -121,38 +121,35 @@ const Footer = memo(() => {
               <p className="font-semibold mb-4 sm:mb-6 lg:mb-8">
                 <strong className="text-[#82e95f]">Disclaimer:</strong>
               </p>
-              <div className="text-center sm:text-left space-y-4 sm:space-y-6 pb-8">
-                <p>
-                  Trading in financial markets, including forex, indices,
-                  and derivatives, involves substantial risk and may not be suitable
-                  for all investors. The strategies and educational content provided
-                  by us are for informational and educational purposes only and do not
-                  constitute financial or investment advice. You may lose some or all
-                  of your capital, and past performance does not guarantee future
-                  results. Individual outcomes will vary. No guarantees of profit or
-                  success are made.
-                </p>
-                
-                <p>
-                  We are not SEBI-registered advisors and do not
-                  provide any investment recommendations or portfolio management
-                  services. All examples, trade setups, or performance results shown
-                  are purely hypothetical or for illustrative purposes, and may not
-                  reflect actual trading results.
-                </p>
-                
-                <p>
-                  Participation in any of our programs
-                  or use of our tools is at your own risk. Always consult with a
-                  certified financial advisor before making any trading or investment
-                  decisions.
-                </p>
-                
-                <p className="pt-2 sm:pt-4">
-                  By accessing our website and services, you acknowledge and agree to
-                  our Terms of Use, Privacy Policy, and Risk Disclosure.
-                </p>
-              </div>
+<div className="px-4 sm:px-6 lg:px-8 py-8">
+  <div className="max-w-4xl mx-auto sm:text-center xl:w-[1223px] xl:h-[291px] text-left space-y-4 sm:space-y-6 text-sm sm:text-base leading-relaxed xl:leading-[28px] xl:font-[400] text-white">
+    
+    <p>
+      Trading in financial markets, including forex, indices, and derivatives,
+      involves substantial risk and may not be suitable for all investors.
+      The strategies and educational content provided by us are for informational
+      and educational purposes only and do not constitute financial or investment
+      advice. You may lose some or all of your capital, and past performance
+      does not guarantee future results. Individual outcomes will vary.
+      No guarantees of profit or success are made.
+
+      We are not SEBI-registered advisors and do not provide any investment
+      recommendations or portfolio management services. All examples, trade
+      setups, or performance results shown are purely hypothetical or for
+      illustrative purposes, and may not reflect actual trading results.
+
+      Participation in any of our programs or use of our tools is at your own
+      risk. Always consult with a certified financial advisor before making any
+      trading or investment decisions.
+    </p>
+
+    <p className="pt-2">
+      By accessing our website and services, you acknowledge and agree to
+      our Terms of Use, Privacy Policy, and Risk Disclosure.
+    </p>
+  </div>
+</div>
+
             </div>
           </div>
         </div>

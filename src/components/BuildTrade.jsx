@@ -126,7 +126,7 @@ function BuildTrade() {
             strategies and mentorship.
             <br />
             <br />
-            In the Global Trading Academy, you will gain direct access to expert
+            In the Funded Army, you will gain direct access to expert
             traders and coaches who will guide you through a structured,
             step-by-step path designed to turn beginners into confident, skilled
             traders.

@@ -76,7 +76,7 @@ function Paths() {
               color: "transparent",
             }}
           >
-            GLOBAL TRADING ACADEMY
+            Funded Army
           </h2>
           <p className="text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-6">
             Build a rewarding career! Join Global Trading Academy, master forex
@@ -96,7 +96,7 @@ function Paths() {
             }}
           >
             <h2 className="font-[600] text-[16px] sm:text-[20px]  leading-[20px] sm:leading-[24px] md:leading-[28px] text-white px-2">
-              join global trading academy
+              join funded army
             </h2>
           </a>
         </div>
@@ -112,7 +112,7 @@ function Paths() {
           <h2 className="text-[48px] font-[900] leading-[48px] uppercase">
             stay unemployed
           </h2>
-          <p className="pb-18">
+          <p className="pb-12">
             Don't waste your time! Staying without a job stops you from learning
             forex and winning prop challenges, start changing your life now!
           </p>
@@ -145,9 +145,9 @@ function Paths() {
               color: "transparent",
             }}
           >
-            GLOBAL TRADING ACADEMY
+            Funded Army
           </h2>
-          <p>
+          <p className="pb-6">
             Build a rewarding career! Join Global Trading Academy, master forex
             techniques to overcome prop challenges, and unlock financial growth,
             start today.
@@ -165,7 +165,7 @@ function Paths() {
             }}
           >
             <h2 className="font-[600] lg:text-[28px] leading-[28px] text-white">
-              join global trading academy
+              join funded army
             </h2>
           </a>
         </div>

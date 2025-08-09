@@ -163,7 +163,7 @@ function ChoiceCard() {
               className="mt-4 sm:mt-6 uppercase cursor-pointer w-full max-w-[509px] xl:w-[509px] h-auto min-h-[50px] xl:h-[66px] bg-[#00ff004f] border-[4px] border-white flex items-center justify-center px-4 py-3 xl:px-0 xl:py-0"
             >
               <h2 className="font-[600] text-[16px] sm:text-[20px] xl:text-[22px] 2xl:text-[28px] leading-[22px] sm:leading-[24px] xl:leading-[28px] text-white text-center">
-                join global trading academy
+                join funded army
               </h2>
             </a>
             <div className="flex items-center justify-center mt-2 sm:mt-4 xl:mt-0">
