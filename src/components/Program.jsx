@@ -6,7 +6,7 @@ import gradeint2 from "../assets/paths/gradient2.svg";
 
 function Program() {
   return (
-    <div className="max-h-[800px] sm:min-h-[600px] lg:min-h-[700px] overflow-hidden w-full relative md:mb-[87px] bg-img mt-[0px] xl:mt-[236px] sm:py-8 md:py-12 lg:py-16">
+    <div className="max-h-[800px] sm:min-h-[600px] lg:max-h-[1200px] overflow-hidden w-full relative md:mb-[87px] bg-img mt-[0px] xl:mt-[236px] sm:py-8 md:py-12 lg:py-16">
       <img
         src={gradeint1}
         alt="image"
@@ -22,7 +22,7 @@ function Program() {
           <img
             src={masterprogram}
             alt="Image"
-            className="w-[200px] sm:w-[300px] lg:w-[400px] xl:w-auto h-auto object-contain"
+            className="w-[200px] lg:w-[400px] xl:w-auto h-auto object-contain"
           />
         </div>
         <div className="pt-4 sm:pt-8 xl:pt-22 flex flex-col items-center xl:items-start text-center xl:text-left">
