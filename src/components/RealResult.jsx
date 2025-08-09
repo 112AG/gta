@@ -78,7 +78,7 @@ function RealResult() {
 
   return (
     <div className="relative w-full overflow-hidden px-4 lg:px-0">
-      <h2 className="uppercase text-[28px] sm:text-[36px] md:text-[44px] xl:text-[48px] pt-[120px] sm:pt-[200px] xl:pt-[399px] pb-[40px] xl:pb-[81px] text-center font-[900] leading-tight text-white mb-8">
+      <h2 className="uppercase text-[28px] sm:text-[36px] md:text-[44px] xl:text-[48px] pt-[120px] sm:pt-[200px] xl:pt-[199px] pb-[40px] xl:pb-[81px] text-center font-[900] leading-tight text-white mb-8">
         <span
           style={{
             background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",

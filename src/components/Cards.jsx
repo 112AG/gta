@@ -31,11 +31,11 @@ function Cards() {
   
   return (
     <div className="flex items-center justify-center flex-col font-inter px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-7xl flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch z-50 relative pt-[80px] sm:pt-[128px] gap-4 sm:gap-[17px]">
+      <div className="w-full 2xl:min-w-[1480px] flex flex-col lg:flex-row flex-wrap justify-center items-center lg:items-stretch z-50 relative pt-[80px] sm:pt-[128px] gap-4 sm:gap-[17px]">
         {cards.map((data, idx) => (
           <div
-            className="w-full max-w-[318px] sm:max-w-[360px] lg:w-[360px] 2xl:w-[418px] 
-                       h-auto min-h-[480px] sm:min-h-[526px] lg:h-[589px] 
+            className="w-full max-w-[318px] sm:max-w-[360px] lg:w-[360px] 2xl:min-w-[428px] 
+                       h-auto min-h-[480px] sm:min-h-[526px] lg:h-[629px] 
                        py-4 sm:py-[16px] px-4 sm:px-[26px] 
                        flex flex-col justify-center items-center text-white
                        mx-auto lg:mx-0"

@@ -244,9 +244,9 @@ function Aboutus() {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
       {/* Heading Section */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[7xl] mx-auto">
         <h2 className="uppercase text-[20px] xs:text-[24px] sm:text-[28px] md:text-[36px] lg:text-[44px] xl:text-[48px] 
-                       pt-[80px] sm:pt-[120px] lg:pt-[200px] xl:pt-[399px] 
+                       pt-[80px] sm:pt-[120px] lg:pt-[200px] xl:pt-[250px] 
                        pb-[30px] sm:pb-[40px] xl:pb-[81px] 
                        text-center font-[900] leading-tight text-white mb-4 sm:mb-8 px-2">
           our &nbsp;
@@ -261,7 +261,7 @@ function Aboutus() {
           >
             students &nbsp;
           </span>
-          can't stop <br className="block sm:hidden lg:block xl:hidden"/> talking
+          can't stop <br className="block xl:hidden"/> talking
           <span
             style={{
               background: "linear-gradient(90deg, #c4ffb0 0%, #82e95f 100%)",
