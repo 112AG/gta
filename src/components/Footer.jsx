@@ -104,7 +104,7 @@ const Footer = memo(() => {
               support@globaltradingacademy.com
             </a>
             <a
-              href="https://sachin4803.graphy.com/"
+              href="https://sachin4803.graphy.com/s/authenticate?url=/t/myprofile"
               target="_blank"
               rel="noopener noreferrer"
               className="uppercase border border-white bg-[#82E95F] backdrop-blur-[12.5px] w-[150px] sm:w-[230px] h-[40px] sm:h-[55px] text-[#01030e] text-center text-[14px] sm:text-[16px] font-[700] leading-[20px] mt-2 sm:mt-[20px] cursor-pointer flex items-center justify-center hover:bg-[#6dd449] transition-colors duration-300"

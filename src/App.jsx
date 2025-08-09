@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
+
 
 function App() {
   useEffect(() => {
