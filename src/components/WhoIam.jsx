@@ -67,18 +67,14 @@ function WhoIam() {
                 Behind the scenes, I've quietly built powerful algorithmic
                 trading bots across multiple financial markets designed for one
                 purpose only:
-                <span className="font-medium text-yellow-400">
-                  {" "}
+      
                   to compound wealth silently, automatically, and smartly.
-                </span>
               </p>
 
               <p>
                 These bots aren't for sale.{" "}
-                <span className="font-medium text-yellow-400">
                   They're my private edge, used only for personal and funded
                   account growth.
-                </span>
               </p>
 
               <p>
