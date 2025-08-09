@@ -119,10 +119,10 @@ const Footer = memo(() => {
           <div className="w-full max-w-[1236px] text-white text-[12px] sm:text-[13px] lg:text-[14px] leading-[20px] sm:leading-[24px] lg:leading-[28px] mx-auto">
             <div className="text-center sm:text-left">
               <p className="font-semibold mb-4 sm:mb-6 lg:mb-8">
-                <strong className="text-[#82e95f]">Disclaimer:</strong>
+                <strong className="text-[#82e95f] text-[12px] text-center">Disclaimer:</strong>
               </p>
-<div className="px-4 sm:px-6 lg:px-8 py-8">
-  <div className="max-w-4xl mx-auto sm:text-center xl:w-[1223px] xl:h-[291px] text-left space-y-4 sm:space-y-6 text-sm sm:text-base leading-relaxed xl:leading-[28px] xl:font-[400] text-white">
+<div className="lg:px-8 pb-8">
+  <div className="max-w-4xl mx-auto sm:text-center xl:w-[1223px] xl:h-[291px] text-left space-y-4 sm:space-y-6 text-[10px] sm:text-base leading-relaxed xl:leading-[28px] xl:font-[400] text-white">
     
     <p>
       Trading in financial markets, including forex, indices, and derivatives,
